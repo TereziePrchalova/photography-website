@@ -31,10 +31,10 @@ export default function Navbar(data) {
 
   return (
     <>
-      <div className="w-full bg-pink fixed z-50 left-0 top-0">
+      <div className="w-full fixed z-50 left-0 top-0">
           <nav className="bg-transparent flex justify-between items-center pl-3 pr-6 h-[90px] md:px-7 xl:h-[150px] xl:px-12">
               <div className="nav-logo flex items-center justify-start md:justify-center md:w-1/6 xl:w-1/5">
-                <div className="animate-logo-spin select-none relative w-20 h-14 md:w-24 md:h-20 xl:w-40 xl:h-32">
+                <div className="animate-logo-spin select-none relative w-[7rem] h-[7rem] md:w-24 md:h-20 xl:w-40 xl:h-32">
                   <Link href="/">
                       <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
                   </Link>
