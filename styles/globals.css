@@ -56,6 +56,9 @@ a {
 }
 
 @layer components {
-  .link { @apply text-28px font-GilroyBold }
+  .h1 { @apply font-GilroyBold text-32px xl:text-48px }
+
+  .p { @apply font-GilroyLight text-18px xl:text-22px }
+  .link { @apply font-GilroyBold text-28px }
 }
 

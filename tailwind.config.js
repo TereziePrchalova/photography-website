@@ -22,21 +22,6 @@ module.exports = {
         GilroyLight: ['GilroyLight'],
       },
 
-      backgroundImage: {
-        'bgBubbleGreen': "url('/images/dogBubbleGreen.png')",
-        'bgBubbleWelcome': "url('/images/dogBubbleWelcome.png')",
-        'bgBubbleHealth': "url('/images/dogBubbleHealth.png')",
-        'bgBubbleBook': "url('/images/dogBubbleBook.png')",
-        'bgBubbleGreenTablet': "url('/images/dogBubbleGreenTablet.png')",
-        'bgBubbleHealthTablet': "url('/images/dogBubbleHealthTablet.png')",
-        'bgBubbleBookTablet': "url('/images/dogBubbleBookTablet.png')",
-        'bgBubbleWelcomeTablet': "url('/images/dogBubbleWelcomeTablet.png')",
-        'bgBubbleGreenDesktop': "url('/images/dogBubbleGreenDesktop.png')",
-        'bgBubbleHealthDesktop': "url('/images/dogBubbleHealthDesktop.png')",
-        'bgBubbleBookDesktop': "url('/images/dogBubbleBookDesktop.png')",
-        'bgBubbleWelcomeDesktop': "url('/images/dogBubbleWelcomeDesktop.png')",
-      },
-
       borderRadius: {
         '10px': '10px',
         '25px': '25px',

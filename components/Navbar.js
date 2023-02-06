@@ -40,7 +40,7 @@ export default function Navbar(data) {
                   </Link>
                 </div>
               </div>
-              <div className='hidden lg:block lg:border-b-[1px] lg:border-black lg:-mb-12 lg:w-2/4 xl:w-2/4'></div>
+              <div className='hidden lg:block lg:border-b-[1px] lg:border-grey lg:-mb-12 lg:w-2/4 xl:w-2/4'></div>
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-12 xl:w-1/4">
                 <Link className='select-none' href="/">Home</Link>
                 <Link className='select-none' href="/">Photography</Link>
@@ -48,37 +48,37 @@ export default function Navbar(data) {
                 <Link className='select-none' href="/">Contact</Link>
               </div>
 
-              <div className='absolute top-20 right-[8rem]'>
+              <div className='hidden lg:block lg:absolute lg:top-20 lg:right-[8rem]'>
                 <svg width="163" height="7" viewBox="0 0 163 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <line x1="156" y1="0.5" x2="163" y2="0.5" stroke="black"/>
-                  <line x1="104" y1="0.5" x2="111" y2="0.5" stroke="black"/>
-                  <line x1="52" y1="0.5" x2="59" y2="0.5" stroke="black"/>
-                  <line y1="0.5" x2="7" y2="0.5" stroke="black"/>
-                  <line x1="162.5" x2="162.5" y2="7" stroke="black"/>
-                  <line x1="110.5" x2="110.5" y2="7" stroke="black"/>
-                  <line x1="58.5" x2="58.5" y2="7" stroke="black"/>
-                  <line x1="6.5" x2="6.5" y2="7" stroke="black"/>
+                  <line x1="156" y1="0.5" x2="163" y2="0.5" stroke="#565656"/>
+                  <line x1="104" y1="0.5" x2="111" y2="0.5" stroke="#565656"/>
+                  <line x1="52" y1="0.5" x2="59" y2="0.5" stroke="#565656"/>
+                  <line y1="0.5" x2="7" y2="0.5" stroke="#565656"/>
+                  <line x1="162.5" x2="162.5" y2="7" stroke="#565656"/>
+                  <line x1="110.5" x2="110.5" y2="7" stroke="#565656"/>
+                  <line x1="58.5" x2="58.5" y2="7" stroke="#565656"/>
+                  <line x1="6.5" x2="6.5" y2="7" stroke="#565656"/>
                 </svg>
               </div>
 
               <div>
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className='select-none lg:hidden cursor-pointer' onClick={menuToggle}>
-                  <line x1="30" y1="15.5" x2="35" y2="15.5" stroke="black"/>
-                  <line x1="30" y1="0.5" x2="35" y2="0.5" stroke="black"/>
-                  <line x1="30" y1="30.5" x2="35" y2="30.5" stroke="black"/>
-                  <line x1="15" y1="15.5" x2="20" y2="15.5" stroke="black"/>
-                  <line x1="15" y1="0.5" x2="20" y2="0.5" stroke="black"/>
-                  <line x1="15" y1="30.5" x2="20" y2="30.5" stroke="black"/>
-                  <line y1="15.5" x2="5" y2="15.5" stroke="black"/>
-                  <line y1="0.5" x2="5" y2="0.5" stroke="black"/>
-                  <line x1="34.5" y1="20" x2="34.5" y2="15" stroke="black"/>
-                  <line x1="34.5" y1="5" x2="34.5" stroke="black"/>
-                  <line x1="34.5" y1="35" x2="34.5" y2="30" stroke="black"/>
-                  <line x1="19.5" y1="20" x2="19.5" y2="15" stroke="black"/>
-                  <line x1="19.5" y1="5" x2="19.5" stroke="black"/>
-                  <line x1="19.5" y1="35" x2="19.5" y2="30" stroke="black"/>
-                  <line x1="4.5" y1="20" x2="4.5" y2="15" stroke="black"/>
-                  <line x1="4.5" y1="5" x2="4.5" stroke="black"/>
+                  <line x1="30" y1="15.5" x2="35" y2="15.5" stroke="#565656"/>
+                  <line x1="30" y1="0.5" x2="35" y2="0.5" stroke="#565656"/>
+                  <line x1="30" y1="30.5" x2="35" y2="30.5" stroke="#565656"/>
+                  <line x1="15" y1="15.5" x2="20" y2="15.5" stroke="#565656"/>
+                  <line x1="15" y1="0.5" x2="20" y2="0.5" stroke="#565656"/>
+                  <line x1="15" y1="30.5" x2="20" y2="30.5" stroke="#565656"/>
+                  <line y1="15.5" x2="5" y2="15.5" stroke="#565656"/>
+                  <line y1="0.5" x2="5" y2="0.5" stroke="#565656"/>
+                  <line x1="34.5" y1="20" x2="34.5" y2="15" stroke="#565656"/>
+                  <line x1="34.5" y1="5" x2="34.5" stroke="#565656"/>
+                  <line x1="34.5" y1="35" x2="34.5" y2="30" stroke="#565656"/>
+                  <line x1="19.5" y1="20" x2="19.5" y2="15" stroke="#565656"/>
+                  <line x1="19.5" y1="5" x2="19.5" stroke="#565656"/>
+                  <line x1="19.5" y1="35" x2="19.5" y2="30" stroke="#565656"/>
+                  <line x1="4.5" y1="20" x2="4.5" y2="15" stroke="#565656"/>
+                  <line x1="4.5" y1="5" x2="4.5" stroke="#565656"/>
                 </svg>
               </div>
           </nav>
