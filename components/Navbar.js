@@ -34,18 +34,18 @@ export default function Navbar(data) {
       <div className="w-full fixed z-50 left-0 top-0">
           <nav className="bg-transparent flex justify-between items-center py-8 pl-6 pr-8 md:px-7 xl:h-[150px] xl:px-12">
               <div className="nav-logo flex items-center justify-start md:justify-center md:w-1/6 xl:w-1/5">
-                <div className="relative w-[120px] h-[65px] md:w-24 md:h-20 xl:w-40 xl:h-32">
+                <div className="relative w-[120px] h-[65px] xl:w-40 xl:h-32">
                   <Link href="/">
                       <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
                   </Link>
                 </div>
               </div>
-              <div className="hidden md:flex md:space-x-9 md:w-5/12 xl:w-[60%]">
+              <div className="hidden lg:flex lg:space-x-9 lg:w-5/12 xl:w-[60%]">
                 <Link href="/">Photography</Link>
                 <Link href="/">Photography</Link>
               </div>
               <div>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className='md:hidden cursor-pointer' onClick={menuToggle}>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className='select-none lg:hidden cursor-pointer' onClick={menuToggle}>
                   <line x1="30" y1="15.5" x2="35" y2="15.5" stroke="black"/>
                   <line x1="30" y1="0.5" x2="35" y2="0.5" stroke="black"/>
                   <line x1="30" y1="30.5" x2="35" y2="30.5" stroke="black"/>
@@ -66,15 +66,15 @@ export default function Navbar(data) {
               </div>
           </nav>
 
-          <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen-safe absolute top-0 left-0 z-50 bg-white md:hidden`}>
+          <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen-safe absolute top-0 left-0 z-50 bg-white lg:hidden`}>
             <div className='absolute top-8 left-6 '>
-              <div className="relative w-[120px] h-[65px] md:w-24 md:h-20 xl:w-40 xl:h-32">
+              <div className="relative w-[120px] h-[65px] xl:w-40 xl:h-32">
                 <Link href="/">
                     <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
                 </Link>
               </div>
             </div>
-            <div className='close-btn absolute w-auto right-8 top-11 cursor-pointer' onClick={menuToggle}>
+            <div className='close-btn absolute select-none w-auto right-8 top-11 cursor-pointer' onClick={menuToggle}>
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="33.1817" y1="3.18197" x2="35.303" y2="5.30329" stroke="black"/>
                 <line x1="33.1819" y1="3.88875" x2="35.3051" y2="1.76932" stroke="black"/>
@@ -112,9 +112,9 @@ export default function Navbar(data) {
             </div>
 
             <div className='mt-[10rem] ml-6 flex flex-col'>
-                <Link className='link' href="/">Photography</Link>
-                <Link className='link my-6' href="/">Websites</Link>
-                <Link className='link' href="/">Contact</Link>
+                <Link className='link select-none' href="/">Photography</Link>
+                <Link className='link select-none my-6' href="/">Websites</Link>
+                <Link className='link select-none' href="/">Contact</Link>
             </div>
             
             <div className='absolute bottom-[245px] right-8'>
