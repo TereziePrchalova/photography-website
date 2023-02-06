@@ -11,19 +11,15 @@ module.exports = {
       colors: {
         "white": "#FFFFFF",
         "black": "#000000",
+        "grey": "#565656",
         "orange": "#F2AE7A",
         "purple": "#E597C8",
       },
 
       fontFamily: {
-        MohrRegular: ['Mohr Regular'],
-        MohrBlack: ['Mohr Black'],
-        BubbleGum: ['Bubble Gum'],
-        Circular: ['Circular'],
-        RetailBlack: ['Retail Black'],
-        RetailBold: ['Retail Bold'],
-        obviously: ['obviously'],
-        obviouslyExtended: ['obviously-extended'],
+        GilroyExtraBold: ['GilroyExtraBold'],
+        GilroyBold: ['GilroyBold'],
+        GilroyLight: ['GilroyLight'],
       },
 
       backgroundImage: {

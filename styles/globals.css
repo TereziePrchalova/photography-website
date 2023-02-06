@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family:"GilroyExtraBold";
+  src: url(/fonts/Gilroy-ExtraBold.otf) format("truetype");
+}
+
+@font-face {
+  font-family:"GilroyBold";
+  src: url(/fonts/Gilroy-Bold.otf) format("truetype");
+}
+
+@font-face {
+  font-family:"GilroyLight";
+  src: url(/fonts/Gilroy-Light.otf) format("truetype");
+}
+
 .h-screen-safe {
   height: 100vh;
   height: 100dvh;
@@ -39,3 +54,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@layer components {
+  .link { @apply text-28px font-GilroyBold }
+}
+
