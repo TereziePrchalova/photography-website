@@ -32,18 +32,35 @@ export default function Navbar(data) {
   return (
     <>
       <div className="w-full fixed z-50 left-0 top-0">
-          <nav className="bg-transparent flex justify-between items-center py-8 pl-6 pr-8 md:px-7 xl:h-[150px] xl:px-12">
-              <div className="nav-logo flex items-center justify-start md:justify-center md:w-1/6 xl:w-1/5">
-                <div className="relative w-[120px] h-[65px] xl:w-40 xl:h-32">
+          <nav className="bg-transparent flex justify-between items-center py-8 pl-6 pr-8 md:px-7 xl:pt-[6rem] xl:px-12 max-w-[1440px] xl:m-auto">
+              <div className="nav-logo flex items-center justify-start md:justify-center ">
+                <div className="relative w-[120px] h-[65px]">
                   <Link href="/">
                       <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
                   </Link>
                 </div>
               </div>
-              <div className="hidden lg:flex lg:space-x-9 lg:w-5/12 xl:w-[60%]">
-                <Link href="/">Photography</Link>
-                <Link href="/">Photography</Link>
+              <div className='hidden lg:block lg:border-b-[1px] lg:border-black lg:-mb-12 lg:w-2/4 xl:w-2/4'></div>
+              <div className="hidden lg:flex lg:space-x-9 lg:-mb-12 xl:w-1/4">
+                <Link className='select-none' href="/">Home</Link>
+                <Link className='select-none' href="/">Photography</Link>
+                <Link className='select-none' href="/">Websites</Link>
+                <Link className='select-none' href="/">Contact</Link>
               </div>
+
+              <div className='absolute top-20 right-[8rem]'>
+                <svg width="163" height="7" viewBox="0 0 163 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="156" y1="0.5" x2="163" y2="0.5" stroke="black"/>
+                  <line x1="104" y1="0.5" x2="111" y2="0.5" stroke="black"/>
+                  <line x1="52" y1="0.5" x2="59" y2="0.5" stroke="black"/>
+                  <line y1="0.5" x2="7" y2="0.5" stroke="black"/>
+                  <line x1="162.5" x2="162.5" y2="7" stroke="black"/>
+                  <line x1="110.5" x2="110.5" y2="7" stroke="black"/>
+                  <line x1="58.5" x2="58.5" y2="7" stroke="black"/>
+                  <line x1="6.5" x2="6.5" y2="7" stroke="black"/>
+                </svg>
+              </div>
+
               <div>
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className='select-none lg:hidden cursor-pointer' onClick={menuToggle}>
                   <line x1="30" y1="15.5" x2="35" y2="15.5" stroke="black"/>
@@ -112,6 +129,7 @@ export default function Navbar(data) {
             </div>
 
             <div className='mt-[10rem] ml-6 flex flex-col'>
+                <Link className='link select-none' href="/">Home</Link>
                 <Link className='link select-none' href="/">Photography</Link>
                 <Link className='link select-none my-6' href="/">Websites</Link>
                 <Link className='link select-none' href="/">Contact</Link>
