@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function HeroSlider(data) {
     return (
         <>
-            <div className='px-6 my-8'>
+            <div className='px-6 my-4'>
                 <div className="relative w-[288px] h-[203px]">
                     <Image src="/images/slider/heroSliderFirst.png" alt="me" objectFit="cover" layout="fill"/>
                 </div>
