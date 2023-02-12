@@ -31,7 +31,7 @@ export default function Navbar(data) {
 
   return (
     <>
-      <div className="w-full fixed z-50 left-0 top-0">
+      <div className="w-full fixed z-50 left-0 top-0 bg-white">
           <nav className="bg-transparent flex justify-between items-center py-8 pl-6 pr-8 md:px-7 xl:pt-[6rem] xl:px-12 max-w-[1440px] xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-[120px] h-[65px]">
@@ -129,7 +129,7 @@ export default function Navbar(data) {
             </div>
 
             <div className='mt-[10rem] ml-6 flex flex-col'>
-                <Link className='link select-none' href="/">Home</Link>
+                <Link className='link select-none mb-6' href="/">Home</Link>
                 <Link className='link select-none' href="/">Photography</Link>
                 <Link className='link select-none my-6' href="/">Websites</Link>
                 <Link className='link select-none' href="/">Contact</Link>
