@@ -18,7 +18,7 @@ export default function About(data) {
                             <Image src="/images/first.png" alt="me" objectFit="cover" layout="fill"/>
                         </div>
                         <div className="relative w-[140px] h-[140px]">
-                            <Image src="/images/second.png" alt="me" objectFit="cover" layout="fill"/>
+                            <Image src="/images/second.jpg" alt="me" objectFit="cover" layout="fill"/>
                         </div>
                     </div>
                     <div className="w-[90%]">

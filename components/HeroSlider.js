@@ -5,10 +5,10 @@ export default function HeroSlider(data) {
         <>
             <div className='px-6 my-4'>
                 <div className="relative w-[288px] h-[203px]">
-                    <Image src="/images/slider/heroSliderFirst.png" alt="me" objectFit="cover" layout="fill"/>
+                    <Image src="/images/slider/heroSliderFirst.jpg" alt="me" objectFit="cover" layout="fill"/>
                 </div>
                 <div className="my-4">
-                    <h2 className="h2">impsum ipsum ...</h2>
+                    <h2 className="h2">Moments that matter</h2>
                     <p className="p w-[90%] mt-1 mb-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutpat.</p>
                     <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
                         <button className="w-[150px] h-[40px] bg-black text-white">More</button>
