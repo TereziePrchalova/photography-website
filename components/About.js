@@ -13,7 +13,7 @@ export default function About(data) {
                     </div>
                 </div>
                 <div className="px-6">
-                    <div className="flex mt-2 mb-6">
+                    <div className="flex mt-4 mb-6">
                         <div className="relative w-[140px] h-[140px] mr-3">
                             <Image src="/images/first.png" alt="me" objectFit="cover" layout="fill"/>
                         </div>
