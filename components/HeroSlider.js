@@ -9,7 +9,7 @@ export default function HeroSlider(data) {
                 </div>
                 <div className="my-4">
                     <h2 className="h2">Moments that matter</h2>
-                    <p className="p w-[90%] mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
+                    <p className="p w-[300px] mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                     <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
                         <button className="w-[150px] h-[40px] bg-black text-white">More</button>
                     </a>
