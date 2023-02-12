@@ -130,7 +130,7 @@ export default function Navbar(data) {
 
             <div className='mt-[10rem] ml-6 flex flex-col'>
                 <Link className='link select-none mb-6' href="/">Home</Link>
-                <Link className='link select-none' href="/">Photography</Link>
+                <Link className='link select-none' href="/contact">Photography</Link>
                 <Link className='link select-none my-6' href="/">Websites</Link>
                 <Link className='link select-none' href="/">Contact</Link>
             </div>
