@@ -32,7 +32,7 @@ export default function Navbar(data) {
   return (
     <>
       <div className="w-full fixed z-50 left-0 top-0 bg-white">
-          <nav className="bg-transparent flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 xl:pt-[6rem] xl:px-12 max-w-[1440px] xl:m-auto">
+          <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:py-8 xl:pt-[3rem] xl:pb-8 xl:px-12 max-w-[1440px] xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-[120px] h-[65px]">
                   <Link href="/">
@@ -40,15 +40,15 @@ export default function Navbar(data) {
                   </Link>
                 </div>
               </div>
-              <div className='hidden lg:block lg:border-b-[1px] lg:border-grey lg:-mb-12 lg:w-2/4 xl:w-2/4'></div>
-              <div className="hidden lg:flex lg:space-x-9 lg:-mb-12 xl:w-1/4">
+              <div className='hidden lg:block lg:border-b-[1px] lg:border-grey lg:-mb-12 lg:w-[100%] lg:mx-12 '></div>
+              <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
                 <Link className='select-none' href="/">Home</Link>
-                <Link className='select-none' href="/">Photography</Link>
+                <Link className='select-none' href="/contact">Photography</Link>
                 <Link className='select-none' href="/">Websites</Link>
                 <Link className='select-none' href="/">Contact</Link>
               </div>
 
-              <div className='hidden lg:block lg:absolute lg:top-20 lg:right-[8rem]'>
+              <div className='hidden lg:block lg:absolute lg:top-10 lg:right-8 xl:top-14 xl:right-12'>
                 <svg width="163" height="7" viewBox="0 0 163 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="156" y1="0.5" x2="163" y2="0.5" stroke="#565656"/>
                   <line x1="104" y1="0.5" x2="111" y2="0.5" stroke="#565656"/>
@@ -84,14 +84,14 @@ export default function Navbar(data) {
           </nav>
 
           <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen-safe absolute top-0 left-0 z-50 bg-white lg:hidden`}>
-            <div className='absolute top-8 left-6 '>
+            <div className='absolute top-6 left-6 md:left-8 md:top-5'>
               <div className="relative w-[120px] h-[65px] xl:w-40 xl:h-32">
                 <Link href="/">
                     <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
                 </Link>
               </div>
             </div>
-            <div className='close-btn absolute select-none w-auto right-8 top-11 cursor-pointer' onClick={menuToggle}>
+            <div className='close-btn absolute select-none w-auto right-8 top-9 md:top-8 cursor-pointer' onClick={menuToggle}>
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="33.1817" y1="3.18197" x2="35.303" y2="5.30329" stroke="black"/>
                 <line x1="33.1819" y1="3.88875" x2="35.3051" y2="1.76932" stroke="black"/>
@@ -128,7 +128,7 @@ export default function Navbar(data) {
               </svg>
             </div>
 
-            <div className='mt-[10rem] ml-6 flex flex-col'>
+            <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
                 <Link className='link select-none mb-6' href="/">Home</Link>
                 <Link className='link select-none' href="/contact">Photography</Link>
                 <Link className='link select-none my-6' href="/">Websites</Link>
