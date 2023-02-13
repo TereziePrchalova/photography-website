@@ -16,7 +16,7 @@ export default function HeroSlider(data) {
                 </div>
                 <div className="flex mt-8 mb-12">
                     <div className="relative w-[150px] h-[225px] mr-3">
-                        <Image src="/images/slider/heroSliderSecond.jpg" alt="me" objectFit="cover" layout="fill"/>
+                        <Image src="/images/slider/heroSliderSecond.jpeg" alt="me" objectFit="cover" layout="fill"/>
                     </div>
                     <div>
                         <div className="relative w-[125px] h-[125px] mb-3">
