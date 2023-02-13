@@ -59,6 +59,7 @@ a {
   .h1 { @apply font-GilroyBold text-32px md:text-42px xl:text-48px }
   .h2 { @apply font-GilroyBold text-24px md:text-32px xl:text-48px }
   .copy { @apply font-GilroyLight text-16px md:text-22px xl:text-22px }
+  .heroSubheadline { @apply font-GilroyBold text-24px md:text-30px xl:text-48px }
 
   .p { @apply font-GilroyLight text-14px md:text-16px xl:text-22px }
   .link { @apply font-GilroyBold text-28px }

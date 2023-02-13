@@ -32,7 +32,7 @@ export default function Navbar(data) {
   return (
     <>
       <div className="w-full fixed z-50 left-0 top-0 bg-white">
-          <nav className="bg-transparent flex justify-between items-center py-6 pl-6 pr-8 md:px-7 xl:pt-[6rem] xl:px-12 max-w-[1440px] xl:m-auto">
+          <nav className="bg-transparent flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 xl:pt-[6rem] xl:px-12 max-w-[1440px] xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-[120px] h-[65px]">
                   <Link href="/">

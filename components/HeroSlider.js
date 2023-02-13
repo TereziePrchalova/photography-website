@@ -29,16 +29,16 @@ export default function HeroSlider(data) {
                     </div>
                 </div>
             </div>
-            <div className='hidden px-6 my-4 md:block'>
+            <div className='hidden px-8 my-4 md:block'>
                 <div className="flex">
-                    <div className="relative w-[292px] h-[437px]">
+                    <div className="relative w-[300px] h-[450px]">
                         <Image src="/images/slider/heroSliderSecond.jpeg" alt="me" objectFit="cover" layout="fill"/>
                     </div>
                     <div className="ml-4 flex flex-col justify-between">
-                        <div className="relative w-[279px] h-[203px]">
+                        <div className="relative w-[300px] h-[200px]">
                             <Image src="/images/slider/heroSliderFirst.jpeg" alt="me" objectFit="cover" layout="fill"/>
                         </div>
-                        <h2 className="h2">Moments that matter</h2>
+                        <h2 className="heroSubheadline">Moments that matter</h2>
                         <p className="p w-[300px] mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                         <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
                             <button className="w-[150px] h-[40px] bg-black text-white">More</button>
