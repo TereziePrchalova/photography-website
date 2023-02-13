@@ -5,7 +5,7 @@ export default function About(data) {
         <>
             <div className=''>
                 <div className="flex justify-between w-[100vw] pl-6">
-                    <div className="w-[225px] mr-2 xl:w-[445px] xl:mr-4">
+                    <div className="w-[225px] mr-2 md:w-[295px] md:mr-3 xl:w-[445px] xl:mr-4">
                         <h2 className='h2 text-transparent bg-clip-text bg-gradient-to-br from-orange to-purple w-max'>A little bit about me</h2>
                     </div>
                     <div className="w-[100%] my-auto">
