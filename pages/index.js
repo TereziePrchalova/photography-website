@@ -5,7 +5,7 @@ import Work from "../components/Work";
 
 export default function Home() {
   return (
-    <div className="mt-[8rem] xl:mt-[12rem]">
+    <div className="mt-[8rem] xl:mt-[11rem]">
       <HeroText/>
       <HeroSlider/>
       <About/>
