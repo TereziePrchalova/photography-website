@@ -36,7 +36,7 @@ export default function Navbar(data) {
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-[120px] h-[65px]">
                   <Link href="/">
-                      <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
+                      <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logoTerezie.png" layout="fill" objectFit="contain" />
                   </Link>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function Navbar(data) {
             <div className='absolute top-6 left-6 md:left-8 md:top-5'>
               <div className="relative w-[120px] h-[65px] xl:w-40 xl:h-32">
                 <Link href="/">
-                    <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logo.png" layout="fill" objectFit="contain" />
+                    <Image className="cursor-pointer" alt="GoodWeird Logo" src="/images/logoTerezie.png" layout="fill" objectFit="contain" />
                 </Link>
               </div>
             </div>
