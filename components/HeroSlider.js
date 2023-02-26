@@ -39,7 +39,7 @@ export default function HeroSlider(data) {
                             <Image src="/images/slider/heroSliderFirst.jpeg" alt="me" objectFit="cover" layout="fill"/>
                         </div>
                         <h2 className="heroSubheadline md:-mb-2 lg:mt-4">Moments that matter</h2>
-                        <p className="p w-[300px] mt-1 mb-6 xl:w-[390px]">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
+                        <p className="heroText w-[300px] mt-1 mb-6 xl:w-[390px]">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                         <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
                             <button className="w-[150px] h-[40px] bg-black text-white transition-all duration-500 hover:bg-orange">More</button>
                         </a>

@@ -31,7 +31,7 @@ export default function Navbar(data) {
 
   return (
     <>
-      <div className="w-full fixed z-50 left-0 top-0 bg-white">
+      <div className="w-full fixed z-50 left-0 top-0 bg-lightWhite">
           <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:py-8 xl:pt-[3rem] xl:pb-8 xl:px-12 max-w-[1440px] xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-[120px] h-[65px]">

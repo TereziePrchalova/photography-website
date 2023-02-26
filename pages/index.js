@@ -5,7 +5,7 @@ import Work from "../components/Work";
 
 export default function Home() {
   return (
-    <div className="mt-[8rem] xl:mt-[11rem]">
+    <div className="bg-lightWhite pt-[8rem] xl:pt-[11rem]">
       <HeroText/>
       <HeroSlider/>
       <About/>
