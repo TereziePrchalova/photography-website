@@ -30,7 +30,7 @@ export default function HeroSlider(data) {
                 </div>
             </div>
             <div className='m-auto max-w-[1440px]'>
-                <div className="hidden mt-4 mb-14 m-auto md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:w-[1024px] lg:justify-center xl:justify-start xl:w-auto xl:mx-12 xl:mb-[10rem] 2xl:justify-center">
+                <div className="hidden mt-4 mb-14 m-auto md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:w-[1024px] lg:justify-center xl:justify-start xl:w-auto xl:mx-12 xl:mb-[5rem] 2xl:justify-center">
                     <div className="flex">
                         <div className="relative w-[320px] h-[470px] lg:w-[250px] lg:h-[403px] xl:w-[330px] xl:h-[482px] 2xl:w-[390px] 2xl:h-[542px]">
                             <Image src="/images/slider/heroSliderSecond.jpeg" alt="me" objectFit="cover" layout="fill"/>
@@ -42,7 +42,7 @@ export default function HeroSlider(data) {
                             <h2 className="heroSubheadline md:-mb-2 lg:mt-4">Moments that matter</h2>
                             <p className="heroText w-[300px] mt-1 mb-6 xl:w-[390px]">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                             <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
-                                <button className="w-[150px] h-[40px] bg-black text-white transition-all duration-500 hover:bg-orange">More</button>
+                                <button className="w-[150px] h-[40px] bg-black text-white rounded-[2px] transition-all duration-500 hover:bg-orange">More</button>
                             </a>
                         </div>
                     </div>
