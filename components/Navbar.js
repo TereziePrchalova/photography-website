@@ -43,7 +43,7 @@ export default function Navbar(data) {
               <div className='hidden lg:block lg:border-b-[1px] lg:border-grey lg:-mb-12 lg:w-[100%] lg:mx-12 '></div>
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
                 <Link className='select-none' href="/">Home</Link>
-                <Link className='select-none' href="/contact">Photography</Link>
+                <Link className='select-none' href="/portfolio">Portfolio</Link>
                 <Link className='select-none' href="/">Contact</Link>
               </div>
 
@@ -129,7 +129,7 @@ export default function Navbar(data) {
 
             <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
                 <Link className='link select-none mb-6' href="/">Home</Link>
-                <Link className='link select-none' href="/contact">Photography</Link>
+                <Link className='link select-none' href="/portfolio">Portfolio</Link>
                 <Link className='link select-none' href="/">Contact</Link>
             </div>
             

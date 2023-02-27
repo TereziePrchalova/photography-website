@@ -5,7 +5,7 @@ export default function HeroSlider(data) {
         <>
             <div className='my-4 md:hidden'>
                 <div className="relative w-[330px] h-[220px] m-auto">
-                    <Image src="/images/slider/heroSliderFirst.jpeg" alt="me" objectFit="cover" layout="fill"/>
+                    <Image src="/images/slider/heroSliderFirst.jpeg" alt="me" layout="fill"/>
                 </div>
                 <div className="my-4 mx-auto w-[330px]">
                     <h2 className="h2">Moments that matter</h2>
@@ -14,7 +14,7 @@ export default function HeroSlider(data) {
                         <button className="w-[120px] h-[35px] bg-black text-white rounded-[2px]">More</button>
                     </a>
                 </div>
-                <div className="flex justify-center mt-8 mb-12">
+                <div className="flex justify-center mt-8 mb-16">
                     <div className="relative w-[160px] h-[240px] mr-4">
                         <Image src="/images/slider/heroSliderSecond.jpeg" alt="me" objectFit="cover" layout="fill"/>
                     </div>
@@ -29,8 +29,9 @@ export default function HeroSlider(data) {
                     </div>
                 </div>
             </div>
+
             <div className='m-auto max-w-[1440px]'>
-                <div className="hidden mt-4 mb-14 m-auto md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:w-[1024px] lg:justify-center xl:justify-start xl:w-auto xl:mx-12 xl:mb-[5rem] 2xl:justify-center">
+                <div className="hidden mt-4 mb-14 m-auto md:flex md:flex-col md:items-center md:mt-8 md:mb-20 lg:flex lg:flex-row lg:w-[1024px] lg:justify-center xl:w-auto xl:justify-center xl:mx-12 xl:mb-[7rem]">
                     <div className="flex">
                         <div className="relative w-[320px] h-[470px] lg:w-[250px] lg:h-[403px] xl:w-[330px] xl:h-[482px] 2xl:w-[390px] 2xl:h-[542px]">
                             <Image src="/images/slider/heroSliderSecond.jpeg" alt="me" objectFit="cover" layout="fill"/>
