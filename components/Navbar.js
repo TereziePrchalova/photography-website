@@ -32,7 +32,7 @@ export default function Navbar(data) {
   return (
     <>
       <div className="w-full fixed z-50 left-0 top-0 bg-lightWhite">
-          <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:py-8 xl:pt-[3rem] xl:pb-8 xl:px-12 max-w-[1440px] xl:m-auto">
+          <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:px-12 lg:py-8 xl:pt-[3rem] xl:pb-8 xl:px-12 max-w-[1440px] xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-[120px] h-[65px]">
                   <Link href="/">
@@ -44,11 +44,10 @@ export default function Navbar(data) {
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
                 <Link className='select-none' href="/">Home</Link>
                 <Link className='select-none' href="/contact">Photography</Link>
-                <Link className='select-none' href="/">Websites</Link>
                 <Link className='select-none' href="/">Contact</Link>
               </div>
 
-              <div className='hidden lg:block lg:absolute lg:top-10 lg:right-8 xl:top-14 xl:right-12'>
+              <div className='hidden lg:block lg:absolute lg:top-10 lg:right-12 xl:top-14 xl:right-12'>
                 <svg width="163" height="7" viewBox="0 0 163 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="156" y1="0.5" x2="163" y2="0.5" stroke="#565656"/>
                   <line x1="104" y1="0.5" x2="111" y2="0.5" stroke="#565656"/>
@@ -131,7 +130,6 @@ export default function Navbar(data) {
             <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
                 <Link className='link select-none mb-6' href="/">Home</Link>
                 <Link className='link select-none' href="/contact">Photography</Link>
-                <Link className='link select-none my-6' href="/">Websites</Link>
                 <Link className='link select-none' href="/">Contact</Link>
             </div>
             
