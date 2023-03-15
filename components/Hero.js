@@ -113,19 +113,19 @@ export default function Hero(data) {
                             <div className="relative w-[320px] h-[470px] lg:w-[250px] lg:h-[403px] xl:w-[330px] xl:h-[482px] 2xl:w-[390px] 2xl:h-[542px]">
                                 <Image className="rounded-[12px]" src={Img2} alt="me" objectFit="cover" layout="fill"/>
                             </div>
-                            <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                            <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-grey bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                         </div>
                         <div className="ml-4 flex flex-col justify-between xl:ml-6">
                             <div className="group relative cursor-pointer" onClick={() => getImgHorizontal(Img1)}>
                                 <div className="relative w-[360px] h-[240px] lg:w-[330px] lg:h-[230px] xl:w-[390px] xl:h-[260px] 2xl:w-[450px] 2xl:h-[300px]">
                                     <Image className="rounded-[12px]" src={Img1} alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                                <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-grey bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
                             <h2 className="heroSubheadline md:-mb-2 lg:mt-4">Moments that matter</h2>
                             <p className="heroText w-[300px] mt-1 mb-6 xl:w-[390px]">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                             <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
-                                <button className="w-[150px] h-[40px] bg-black text-white rounded-[5px] transition-all duration-500 hover:bg-purple">More</button>
+                                <button className="w-[150px] h-[40px] bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-purple">More</button>
                             </a>
                         </div>
                     </div>
@@ -134,20 +134,20 @@ export default function Hero(data) {
                             <div className="hidden cursor-pointer relative w-[486px] h-[320px] lg:block lg:w-[330px] lg:h-[230px] xl:w-[420px] xl:h-[260px] 2xl:w-[460px] 2xl:h-[300px]">
                                 <Image className="rounded-[12px]" src="/images/hero/heroSliderConcert.jpg" alt="me" objectFit="cover" layout="fill"/>
                             </div>
-                            <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                            <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-grey bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                         </div>
                         <div className="flex mt-4 xl:mt-6">
                             <div className="group relative cursor-pointer mr-4 xl:mr-6" onClick={() => getImgHorizontal(Img3)}>
                                 <div className="relative w-[235px] h-[235px] lg:w-[157px] lg:h-[157px] xl:w-[198px] xl:h-[198px] 2xl:w-[218px] 2xl:h-[218px]">
                                     <Image className="rounded-[12px]" src={Img3} alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                                <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-grey bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
                             <div className="group relative cursor-pointer" onClick={() => getImgHorizontal(Img4)}>    
                                 <div className="relative w-[235px] h-[235px] lg:w-[157px] lg:h-[157px] xl:w-[198px] xl:h-[198px] 2xl:w-[218px] 2xl:h-[218px]">
                                     <Image className="rounded-[12px]" src={Img4} alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                                <div className="absolute top-0 left-0 rounded-[12px] h-full w-full bg-grey bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
                         </div>
                     </div>

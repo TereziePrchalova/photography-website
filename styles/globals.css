@@ -62,7 +62,7 @@ a {
   .heroSubheadline { @apply font-GilroyBold text-24px md:text-30px lg:text-24px xl:text-30px }
   .heroText { @apply font-GilroyLight text-14px md:text-16px lg:text-14px xl:text-18px }
 
-  .work { @apply text-18px tracking-wide md:text-28px lg:text-36px xl:text-42px }
+  .work { @apply text-18px tracking-wide md:text-24px lg:text-26px xl:text-32px }
   .p { @apply font-GilroyLight text-14px md:text-18px 2xl:text-18px }
   .link { @apply font-GilroyBold text-28px }
 }
