@@ -53,25 +53,25 @@ export default function Hero(data) {
         <>
             <div className='my-4 md:hidden'>
                 <div className="relative w-[330px] h-[220px] m-auto">
-                    <Image src={Img1} alt="me" layout="fill"/>
+                    <Image className="rounded-[12px]" src={Img1} alt="me" layout="fill"/>
                 </div>
                 <div className="my-4 mx-auto w-[330px]">
                     <h2 className="h2">Moments that matter</h2>
                     <p className="p w-[300px] mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                     <a href="https://eu.zonerama.com/TereziePrchalova/743152" target="_blank">
-                        <button className="w-[120px] h-[35px] bg-black text-white rounded-[2px]">More</button>
+                        <button className="w-[120px] h-[35px] bg-black text-white rounded-[6px]">More</button>
                     </a>
                 </div>
                 <div className="flex justify-center mt-8 mb-16">
                     <div className="relative w-[160px] h-[240px] mr-4">
-                        <Image src={Img2} alt="me" objectFit="cover" layout="fill"/>
+                        <Image className="rounded-[12px]" src={Img2} alt="me" objectFit="cover" layout="fill"/>
                     </div>
                     <div>
                         <div className="relative w-[154px] h-[154px] mb-4">
-                            <Image src={Img3} alt="me" objectFit="cover" layout="fill"/>
+                            <Image className="rounded-[12px]" src={Img3} alt="me" objectFit="cover" layout="fill"/>
                         </div>
                         <div className="relative w-[154px] h-[154px]">
-                            <Image src={Img4} alt="me" objectFit="cover" layout="fill"/>
+                            <Image className="rounded-[12px]" src={Img4} alt="me" objectFit="cover" layout="fill"/>
                         </div>
 
                     </div>
