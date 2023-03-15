@@ -32,9 +32,9 @@ export default function Work(data) {
                                 <div className="relative w-[157px] h-[157px] md:w-[147px] md:h-[147px] lg:w-[202px] lg:h-[202px] xl:w-[243px] xl:h-[243px]">
                                     <Image className="rounded-[12px]" src="/images/hero/heroSliderFourth.jpg" alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <Link href="/portfolio">
+                                <Link href="/portfolio" onClick={() => filterItem('Wedding')}>
                                     <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
-                                        <p class="work text-white">Weddings</p>
+                                        <p class="work text-white">Weddings ✨</p>
                                     </div>
                                 </Link>
                             </div>
@@ -42,9 +42,9 @@ export default function Work(data) {
                                 <div className="relative w-[157px] h-[157px] md:w-[147px] md:h-[147px] lg:w-[202px] lg:h-[202px] xl:w-[243px] xl:h-[243px]">
                                     <Image className="rounded-[12px]" src="/images/first.jpg" alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <Link href="/portfolio">
+                                <Link href="/portfolio" onClick={() => filterItem('Portrait')}>
                                     <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
-                                        <p class="work text-white">Portraits</p>
+                                        <p class="work text-white">Portraits 🐛</p>
                                     </div>
                                 </Link>
                             </div>

@@ -8,7 +8,7 @@ export default function Gallery(data) {
 
         {
             id: 1,
-            image: "/images/first.jpg",
+            image: "/images/heroHighQuality/2.jpg",
             category: "Wedding",
         },
 
@@ -60,12 +60,21 @@ export default function Gallery(data) {
         {
             id: 11,
             image: "/images/first.jpg",
-            category: "Portraitt",
+            category: "Portrait",
         },
         
     ]
 
     const [items, setItems] = useState(Gallery);
+
+    const filterItem = (categItem) => {
+        const updatedItems = Gallery.filter((curElem) => {
+            return curElem.category === categItem;
+        });
+
+        setItems(updatedItems);
+
+    }
 
 
 
@@ -73,12 +82,12 @@ export default function Gallery(data) {
         <>
             <div className="">
                 <div className="fixed top-[100px] xl:top-[130px] z-50 left-0 pl-8 w-full bg-lightWhite py-5">
-                    <h1 className='h1 leading-10 w-[330px] m-auto md:leading-tight md:w-[696px] lg:w-[942px] xl:w-[1188px] 2xl:w-auto 2xl:mb-0'>Portfolio</h1>
+                    <h1 className='h1 leading-10 w-[330px] md:leading-tight md:w-[696px] lg:w-[942px] xl:w-[1188px] 2xl:w-auto 2xl:mb-0'>Portfolio</h1>
                     <div className="nav ">
-                        <Link className='select-none' href="/">All ✨</Link>
-                        <Link className='select-none mx-4' href="/portfolio">Weddings ✨</Link>
-                        <Link className='select-none' href="/">Portraits ✨</Link>
-                        <Link className='select-none mx-4' href="/">Concerts ✨</Link>
+                        <div className='inline' onClick={() => setItems(Gallery)}>All</div>
+                        <div className='inline mx-4' onClick={() => filterItem('Wedding')} >Weddings</div>
+                        <div className='inline'  onClick={() => filterItem('Portrait')}>Portraits</div>
+                        <div className='inline mx-4' onClick={() => filterItem('Concert')}>Concerts</div>
                     </div>
                 </div>
 

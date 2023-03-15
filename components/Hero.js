@@ -3,8 +3,8 @@ import { use, useState } from "react";
 import Img1 from "../public/images/heroHighQuality/2.jpg"
 import Img2 from "../public/images/heroHighQuality/1.jpg"
 import Img3 from "../public/images/heroHighQuality/3.jpg"
-import Img4 from "../public/images/hero/heroSliderFourth.jpg"
-import Img5 from "../public/images/heroHighQuality/GX7A0290.jpg"
+import Img4 from "../public/images/heroHighQuality/4.jpg"
+import Img5 from "../public/images/heroHighQuality/5.jpg"
 
 export default function Hero(data) {
 
