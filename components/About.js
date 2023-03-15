@@ -14,7 +14,7 @@ export default function About(data) {
                         </svg>
                     </div>
                 </div>
-                <div className="mt-8 mb-14 md:flex md:mx-auto md:w-[696px] lg:w-[942px] lg:flex lg:my-10 xl:w-[1188px] xl:my-14 2xl:w-[1344px]">
+                <div className="mt-8 mb-14 md:flex md:mx-auto md:w-[696px] lg:w-[942px] lg:flex lg:my-10 xl:w-[1188px] xl:my-14 xl:mb-[8rem] 2xl:w-[1344px]">
                     <div className="flex justify-center mt-1 mb-6 md:my-0 md:flex md:flex-col xl:flex-row">
                         <div className="relative w-[157px] h-[157px] mr-4 md:mb-4 lg:mr-4 xl:mb-0 xl:mr-6 xl:w-[255px] xl:h-[255px]">
                             <Image className="rounded-[12px]" src="/images/first.jpg" alt="me" objectFit="cover" layout="fill"/>

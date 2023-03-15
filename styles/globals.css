@@ -65,6 +65,7 @@ a {
   .work { @apply text-18px tracking-wide md:text-24px lg:text-26px xl:text-32px }
   .p { @apply font-GilroyLight text-14px md:text-18px 2xl:text-18px }
   .link { @apply font-GilroyBold text-28px }
+  .linkDesktop { @apply font-GilroyBold text-18px }
 }
 
 .custom-img {
@@ -96,4 +97,34 @@ a {
 
 .unset-img2 > div {
   position: unset !important;
+}
+
+/* Navbar links hover underline animation on devices supporting hover */
+.anim_underline {
+  position: relative;
+}
+
+@media (hover: hover) {
+  .anim_underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+  }
+
+  .anim_underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.anim_underline_active:after {
+  transform: scaleX(1);
+  background-color: #EDAEA8;
 }

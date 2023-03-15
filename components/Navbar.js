@@ -2,11 +2,14 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import useScrollPosition from '../hooks/scrollPosition';
+import { useRouter } from 'next/router';
 
 export default function Navbar(data) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollPosition = useScrollPosition();
+
+  const router = useRouter();
 
 
   useEffect(() => {
@@ -40,11 +43,11 @@ export default function Navbar(data) {
                   </Link>
                 </div>
               </div>
-              <div className='hidden lg:block lg:border-b-[1px] lg:border-grey lg:-mb-12 lg:w-[100%] lg:mx-12 '></div>
+              <div className='hidden lg:block lg:border-b-[1px] lg:border-black lg:-mb-12 lg:w-[100%] lg:mx-12 '></div>
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
-                <Link className='select-none' href="/">Home</Link>
-                <Link className='select-none' href="/portfolio">Portfolio</Link>
-                <Link className='select-none' href="/">Contact</Link>
+                <Link className={router.pathname == "/" ? "text-pink anim_underline anim_underline_active pb-2 linkDesktop" : "anim_underline pb-2 linkDesktop"} href="/">Home</Link>
+                <Link className={router.pathname == "/portfolio" ? "text-pink anim_underline anim_underline_active pb-2 linkDesktop" : "anim_underline pb-2 linkDesktop"} href="/portfolio">Portfolio</Link>
+                <Link className={router.pathname == "/contact" ? "text-pink anim_underline anim_underline_active pb-2 linkDesktop" : "anim_underline pb-2 linkDesktop"} href="/contact">Contact</Link>
               </div>
 
               <div className='hidden lg:block lg:absolute lg:top-10 lg:right-12 xl:top-14 xl:right-12'>
