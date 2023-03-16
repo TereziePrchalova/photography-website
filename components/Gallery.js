@@ -34,23 +34,23 @@ export default function Gallery(data) {
         },
         {
             id: 6,
-            image: "/images/first.jpg",
+            image: "/images/concerts/1.jpg",
             category: "Concert",
         },
         {
             id: 7,
-            image: "/images/first.jpg",
+            image: "/images/concerts/2.jpg",
             category: "Concert",
         },
         {
             id: 8,
-            image: "/images/first.jpg",
+            image: "/images/concerts/4.jpg",
             category: "Concert",
         },
         {
             id: 9,
-            image: "/images/first.jpg",
-            category: "Portrait",
+            image: "/images/concerts/5.jpg",
+            category: "Concert",
         },
         {
             id: 10,
@@ -61,6 +61,21 @@ export default function Gallery(data) {
             id: 11,
             image: "/images/first.jpg",
             category: "Portrait",
+        },
+        {
+            id: 12,
+            image: "/images/first.jpg",
+            category: "Portrait",
+        },
+        {
+            id: 14,
+            image: "/images/concerts/3.jpg",
+            category: "Concert",
+        },
+        {
+            id: 15,
+            image: "/images/concerts/6.jpg",
+            category: "Concert",
         },
         
     ]
