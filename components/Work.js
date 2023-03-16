@@ -17,15 +17,17 @@ export default function Work(data) {
                 </div>
                 <div className="mt-8 pb-14 md:flex md:w-[696px] md:mx-auto lg:w-[942px] xl:w-[1188px] 2xl:w-[1344px]">
                     <div>
-                        <div className="group relative">
-                            <div className="relative m-auto w-[330px] h-[220px] md:w-[310px] md:h-[200px] lg:w-[420px] lg:h-[280px] xl:w-[510px] xl:h-[340px]">
-                                <Image className="rounded-[12px]" src="/images/hero/heroSliderConcert.jpg" alt="me" objectFit="cover" layout="fill"/>
-                            </div>
-                            <Link href="/portfolio">
-                                <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
-                                    <p class="work text-white">Weddings</p>
+                        <div className="flex justify-center">
+                            <div className="group relative">
+                                <div className="relative w-[330px] h-[220px] md:w-[310px] md:h-[200px] lg:w-[420px] lg:h-[280px] xl:w-[510px] xl:h-[340px]">
+                                    <Image className="rounded-[12px]" src="/images/hero/heroSliderConcert.jpg" alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                            </Link>
+                                <Link href="/portfolio">
+                                    <div class="absolute top-0 left-0 rounded-[12px] w-[330px] md:w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
+                                        <p class="work text-white">Concerts</p>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                         <div className="flex justify-center mt-4 xl:mt-6">
                             <div className="group relative cursor-pointer mr-4 xl:mr-6">
@@ -34,7 +36,7 @@ export default function Work(data) {
                                 </div>
                                 <Link href="/portfolio" onClick={() => filterItem('Wedding')}>
                                     <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
-                                        <p class="work text-white">Weddings ✨</p>
+                                        <p class="work text-white">Weddings</p>
                                     </div>
                                 </Link>
                             </div>
@@ -44,7 +46,7 @@ export default function Work(data) {
                                 </div>
                                 <Link href="/portfolio" onClick={() => filterItem('Portrait')}>
                                     <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
-                                        <p class="work text-white">Portraits 🐛</p>
+                                        <p class="work text-white">Portraits</p>
                                     </div>
                                 </Link>
                             </div>
@@ -62,7 +64,7 @@ export default function Work(data) {
                             </Link>
                         </div>
                         <a href="/portfolio">
-                            <button className="w-[120px] h-[35px] bg-black text-white rounded-[6px] md:absolute md:bottom-0 lg:w-[150px] lg:h-[40px] transition-all duration-500 hover:bg-pink">Go to</button>
+                            <button className="w-[120px] h-[35px] bg-black text-white rounded-[6px] md:absolute md:bottom-0 lg:w-[150px] lg:h-[40px] transition-all duration-500 hover:bg-pink">Portfolio</button>
                         </a>
                     </div>
                 </div>

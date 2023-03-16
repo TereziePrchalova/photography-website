@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
+import Document from "next/document";
+import { useEffect } from "react";
 
 export default function Gallery(data) {
 
@@ -84,6 +86,7 @@ export default function Gallery(data) {
 
     const filterItem = (categItem) => {
         const updatedItems = Gallery.filter((curElem) => {
+
             return curElem.category === categItem;
         });
 
@@ -91,18 +94,52 @@ export default function Gallery(data) {
 
     }
 
+    var activeDiv = null;
+
+    function toggleDiv(div) {
+        if (activeDiv === div) {
+    // Clicked on the same active div, reset to default state
+            div.style.color = "black";
+            activeDiv = null;
+        } else {
+    // Clicked on a new div
+            if (activeDiv) {
+        // Reset the previously active div to default state
+                activeDiv.style.color = "black";
+            }
+
+        // Set the new div as active
+            div.style.color = "#EDAEA8";
+            activeDiv = div;
+        }
+    }
+
+    useEffect(() => {
+
+        const divs = document.querySelectorAll(".clickable");
+
+        for (var i = 0; i < divs.length; i++) {
+            var div = divs[i];
+            div.addEventListener("click", function() {
+                toggleDiv(this);
+            });
+        }
+
+      });
 
 
     return (
         <>
             <div className="">
-                <div className="fixed top-[100px] xl:top-[130px] z-50 left-0 pl-8 w-full bg-lightWhite py-5">
-                    <h1 className='h1 leading-10 w-[330px] md:leading-tight md:w-[696px] lg:w-[942px] xl:w-[1188px] 2xl:w-auto 2xl:mb-0'>Portfolio</h1>
-                    <div className="nav ">
-                        <div className='inline' onClick={() => setItems(Gallery)}>All</div>
-                        <div className='inline mx-4' onClick={() => filterItem('Wedding')} >Weddings</div>
-                        <div className='inline'  onClick={() => filterItem('Portrait')}>Portraits</div>
-                        <div className='inline mx-4' onClick={() => filterItem('Concert')}>Concerts</div>
+                <div className="fixed w-full top-[7rem] z-40 left-0 md:top-[6rem] bg-lightWhite xl:top-[9rem]">
+                    <div className="relative flex flex-col justify-start pt-4 pb-6 px-6 md:flex-row md:pt-8 md:pb-4 md:px-8 lg:px-12 lg:pb-5 xl:px-12 max-w-[1440px] xl:m-auto xl:pt-4">
+                        <h1 className='h1 leading-10 md:leading-tight'>Portfolio</h1>
+                        <div className="mt-1 md:my-auto md:ml-8">
+                            <div className='clickable inline cursor-pointer' onClick={() => setItems(Gallery)}>All</div>
+                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('Wedding')} >Weddings</div>
+                            <div className='clickable inline cursor-pointer' onClick={() => filterItem('Portrait')}>Portraits</div>
+                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('Concert')}>Concerts</div>
+                        </div>
                     </div>
                 </div>
 
