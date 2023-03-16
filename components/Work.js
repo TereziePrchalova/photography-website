@@ -22,7 +22,7 @@ export default function Work(data) {
                                 <div className="relative w-[330px] h-[220px] md:w-[310px] md:h-[200px] lg:w-[420px] lg:h-[280px] xl:w-[510px] xl:h-[340px]">
                                     <Image className="rounded-[12px]" src="/images/hero/heroSliderConcert.jpg" alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <Link href="/portfolio">
+                                <Link href="/portfolio?section=concert">
                                     <div class="absolute top-0 left-0 rounded-[12px] w-[330px] md:w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                         <p class="work text-white">Concerts</p>
                                     </div>
@@ -34,7 +34,7 @@ export default function Work(data) {
                                 <div className="relative w-[157px] h-[157px] md:w-[147px] md:h-[147px] lg:w-[202px] lg:h-[202px] xl:w-[243px] xl:h-[243px]">
                                     <Image className="rounded-[12px]" src="/images/hero/heroSliderFourth.jpg" alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <Link href="/portfolio" onClick={() => filterItem('Wedding')}>
+                                <Link href="/portfolio?section=wedding">
                                     <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                         <p class="work text-white">Weddings</p>
                                     </div>
@@ -44,7 +44,7 @@ export default function Work(data) {
                                 <div className="relative w-[157px] h-[157px] md:w-[147px] md:h-[147px] lg:w-[202px] lg:h-[202px] xl:w-[243px] xl:h-[243px]">
                                     <Image className="rounded-[12px]" src="/images/first.jpg" alt="me" objectFit="cover" layout="fill"/>
                                 </div>
-                                <Link href="/portfolio" onClick={() => filterItem('Portrait')}>
+                                <Link href="/portfolio?section=portrait">
                                     <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                         <p class="work text-white">Portraits</p>
                                     </div>
@@ -57,7 +57,7 @@ export default function Work(data) {
                             <div className="relative object-cover w-[194px] h-[291px] md:w-[235px] md:h-[363px] lg:w-[332px] lg:h-[498px] xl:w-[404px] xl:h-[607px]">
                                 <Image className="rounded-[12px]" src="/images/hero/heroSliderSecond.jpeg" alt="me" objectFit="cover" layout="fill"/>
                             </div>
-                            <Link href="/portfolio">
+                            <Link href="/portfolio?section=portrait">
                                 <div class="absolute top-0 left-0 rounded-[12px] w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                     <p class="work text-white">Portraits</p>
                                 </div>

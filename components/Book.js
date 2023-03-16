@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from 'next/script';
 
 export default function Book(data) {
     return (
@@ -15,12 +16,10 @@ export default function Book(data) {
                         </svg>
                     </div>
                 </div>
-                {/*
                 <div>
                     <div className="calendly-inline-widget min-w-[320px] h-[100vh]" data-url="https://calendly.com/terezieprchalova/wedding-consultation?primary_color=e198c2"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <Script src="https://assets.calendly.com/assets/external/widget.js" />
                 </div>
-                */}
             </div>
         </>
     );

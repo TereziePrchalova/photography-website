@@ -45,9 +45,9 @@ export default function Navbar(data) {
               </div>
               <div className='hidden lg:block lg:border-b-[1px] lg:border-black lg:-mb-12 lg:w-[100%] lg:mx-12 '></div>
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
-                <Link className={router.pathname == "/" ? "text-pink anim_underline anim_underline_active pb-2 linkDesktop" : "anim_underline pb-2 linkDesktop"} href="/">Home</Link>
-                <Link className={router.pathname == "/portfolio" ? "text-pink anim_underline anim_underline_active pb-2 linkDesktop" : "anim_underline pb-2 linkDesktop"} href="/portfolio">Portfolio</Link>
-                <Link className={router.pathname == "/contact" ? "text-pink anim_underline anim_underline_active pb-2 linkDesktop" : "anim_underline pb-2 linkDesktop"} href="/contact">Contact</Link>
+                <Link className={`${router.pathname == "/" ? "text-pink anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/">Home</Link>
+                <Link className={`${router.pathname == "/portfolio" ? "text-pink anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/portfolio">Portfolio</Link>
+                <Link className={`${router.pathname == "/contact" ? "text-pink anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/contact">Contact</Link>
               </div>
 
               <div className='hidden lg:block lg:absolute lg:top-10 lg:right-12 xl:top-14 xl:right-12'>
@@ -60,7 +60,7 @@ export default function Navbar(data) {
 
               <div>
                 <svg width="39" height="42" viewBox="0 0 39 42" fill="none" xmlns="http://www.w3.org/2000/svg" className='select-none lg:hidden cursor-pointer' onClick={menuToggle}>
-                  <g clip-path="url(#clip0_936_242)">
+                  <g clipPath="url(#clip0_936_242)">
                   <path d="M4.60303 5.99114L3.52121 10L2.54545 5.96899L0 4.93909L2.38636 4.08638L3.44697 0L4.56061 3.99779L7 5.00554L4.60303 5.99114Z" fill="black"/>
                   </g>
                   <g clip-path="url(#clip1_936_242)">
@@ -150,9 +150,9 @@ export default function Navbar(data) {
             </div>
 
             <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
-                <Link className='link select-none mb-4' href="/">Home</Link>
-                <Link className='link select-none mb-4' href="/portfolio">Portfolio</Link>
-                <Link className='link select-none' href="/">Contact</Link>
+                <Link className='link select-none mb-4' onClick={menuToggle} href="/">Home</Link>
+                <Link className='link select-none mb-4' onClick={menuToggle} href="/portfolio">Portfolio</Link>
+                <Link className='link select-none' onClick={menuToggle} href="/">Contact</Link>
             </div>
             
             <div className='absolute bottom-[245px] right-8'>

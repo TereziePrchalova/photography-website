@@ -4,80 +4,82 @@ import Link from "next/link";
 import Document from "next/document";
 import { useEffect } from "react";
 
-export default function Gallery(data) {
+export default function Gallery({section}) {
+
+    console.log(section)
 
     const Gallery = [
 
         {
             id: 1,
             image: "/images/heroHighQuality/2.jpg",
-            category: "Wedding",
+            category: "wedding",
         },
 
         {
             id: 2,
             image: "/images/heroHighQuality/3.jpg",
-            category: "Wedding",
+            category: "wedding",
         },
         {
             id: 3,
             image: "/images/heroHighQuality/5.jpg",
-            category: "Wedding",
+            category: "wedding",
         },
         {
             id: 4,
             image: "/images/heroHighQuality/5.jpg",
-            category: "Wedding",
+            category: "wedding",
         },
         {
             id: 5,
             image: "/images/heroHighQuality/2.jpg",
-            category: "Wedding",
+            category: "wedding",
         },
         {
             id: 6,
             image: "/images/concerts/1.jpg",
-            category: "Concert",
+            category: "concert",
         },
         {
             id: 7,
             image: "/images/concerts/2.jpg",
-            category: "Concert",
+            category: "concert",
         },
         {
             id: 8,
             image: "/images/concerts/4.jpg",
-            category: "Concert",
+            category: "concert",
         },
         {
             id: 9,
             image: "/images/concerts/5.jpg",
-            category: "Concert",
+            category: "concert",
         },
         {
             id: 10,
             image: "/images/first.jpg",
-            category: "Portrait",
+            category: "portrait",
         },
         {
             id: 11,
             image: "/images/first.jpg",
-            category: "Portrait",
+            category: "portrait",
         },
         {
             id: 12,
             image: "/images/first.jpg",
-            category: "Portrait",
+            category: "portrait",
         },
         {
             id: 14,
             image: "/images/concerts/3.jpg",
-            category: "Concert",
+            category: "concert",
         },
         {
             id: 15,
             image: "/images/concerts/6.jpg",
-            category: "Concert",
+            category: "concert",
         },
         
     ]
@@ -93,6 +95,14 @@ export default function Gallery(data) {
         setItems(updatedItems);
 
     }
+
+    useEffect(() => {
+
+        if (section) {
+            filterItem(section);
+        }
+
+      }, []);
 
     let activeDiv = null;
 
@@ -140,9 +150,9 @@ export default function Gallery(data) {
                         <h1 className='h1 leading-10 md:leading-tight'>Portfolio</h1>
                         <div className="mt-1 md:my-auto md:ml-8">
                             <div className='all text-pink clickable inline cursor-pointer' onClick={() => setItems(Gallery)}>All</div>
-                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('Wedding')} >Weddings</div>
-                            <div className='clickable inline cursor-pointer' onClick={() => filterItem('Portrait')}>Portraits</div>
-                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('Concert')}>Concerts</div>
+                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('wedding')} >Weddings</div>
+                            <div className='clickable inline cursor-pointer' onClick={() => filterItem('portrait')}>Portraits</div>
+                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('concert')}>Concerts</div>
                         </div>
                     </div>
                 </div>
