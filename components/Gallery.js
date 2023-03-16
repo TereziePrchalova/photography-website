@@ -103,7 +103,7 @@ export default function Gallery(data) {
         function toggleDiv(div) {
             if (activeDiv === div) {
         // Clicked on the same active div, reset to default state
-                all.style.color = "black"
+                all.style.color = "black";
                 div.style.color = "black";
                 activeDiv = null;
             } else {
@@ -111,6 +111,7 @@ export default function Gallery(data) {
                 if (activeDiv) {
             // Reset the previously active div to default state
                     activeDiv.style.color = "black";
+                    all.style.color = "black";
                 }
     
             // Set the new div as active
@@ -128,7 +129,7 @@ export default function Gallery(data) {
             });
         }
       });
-      
+
 
     return (
         <>
