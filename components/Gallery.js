@@ -21,7 +21,7 @@ export default function Gallery(data) {
         },
         {
             id: 3,
-            image: "/images/heroHighQuality/4.jpg",
+            image: "/images/heroHighQuality/5.jpg",
             category: "Wedding",
         },
         {
@@ -101,6 +101,7 @@ export default function Gallery(data) {
         const all = document.querySelector(".all")
 
         function toggleDiv(div) {
+
             if (activeDiv === div) {
         // Clicked on the same active div, reset to default state
                 all.style.color = "black";
@@ -145,19 +146,21 @@ export default function Gallery(data) {
                         </div>
                     </div>
                 </div>
-
-                {
-                    items.map((elem) => {
-                        const { id, image, category } = elem;
-                        return (
-                            <div>
-                                <div className="relative w-[360px] h-[240px] lg:w-[330px] lg:h-[230px] xl:w-[390px] xl:h-[260px] 2xl:w-[450px] 2xl:h-[300px]">
-                                    <Image className="rounded-[12px]" src={image} alt="me" objectFit="cover" layout="fill"/>
+                <div className="gallery">
+                    {
+                        items.map((elem) => {
+                            const { id, image, category } = elem;
+                            return (
+                                <div>
+                                    <div className="pics unset-img-gallery">
+                                        <Image className="rounded-[12px] custom-img-gallery" src={image} alt="me" objectFit="cover" layout="fill"/>
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
+                            )
+                        })
+                    }
+                </div>
+
             </div>
         </>
     );
