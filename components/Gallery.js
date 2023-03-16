@@ -94,39 +94,41 @@ export default function Gallery(data) {
 
     }
 
-    var activeDiv = null;
-
-    function toggleDiv(div) {
-        if (activeDiv === div) {
-    // Clicked on the same active div, reset to default state
-            div.style.color = "black";
-            activeDiv = null;
-        } else {
-    // Clicked on a new div
-            if (activeDiv) {
-        // Reset the previously active div to default state
-                activeDiv.style.color = "black";
-            }
-
-        // Set the new div as active
-            div.style.color = "#EDAEA8";
-            activeDiv = div;
-        }
-    }
+    let activeDiv = null;
 
     useEffect(() => {
 
-        const divs = document.querySelectorAll(".clickable");
+        const all = document.querySelector(".all")
 
-        for (var i = 0; i < divs.length; i++) {
-            var div = divs[i];
+        function toggleDiv(div) {
+            if (activeDiv === div) {
+        // Clicked on the same active div, reset to default state
+                all.style.color = "black"
+                div.style.color = "black";
+                activeDiv = null;
+            } else {
+        // Clicked on a new div
+                if (activeDiv) {
+            // Reset the previously active div to default state
+                    activeDiv.style.color = "black";
+                }
+    
+            // Set the new div as active
+                div.style.color = "#EDAEA8";
+                activeDiv = div;
+            }
+        }
+
+        const divs = document.querySelectorAll(".clickable");
+  
+        for (let i = 0; i < divs.length; i++) {
+            let div = divs[i];
             div.addEventListener("click", function() {
                 toggleDiv(this);
             });
         }
-
       });
-
+      
 
     return (
         <>
@@ -135,7 +137,7 @@ export default function Gallery(data) {
                     <div className="relative flex flex-col justify-start pt-4 pb-6 px-6 md:flex-row md:pt-8 md:pb-4 md:px-8 lg:px-12 lg:pb-5 xl:px-12 max-w-[1440px] xl:m-auto xl:pt-4">
                         <h1 className='h1 leading-10 md:leading-tight'>Portfolio</h1>
                         <div className="mt-1 md:my-auto md:ml-8">
-                            <div className='clickable inline cursor-pointer' onClick={() => setItems(Gallery)}>All</div>
+                            <div className='all text-pink clickable inline cursor-pointer' onClick={() => setItems(Gallery)}>All</div>
                             <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('Wedding')} >Weddings</div>
                             <div className='clickable inline cursor-pointer' onClick={() => filterItem('Portrait')}>Portraits</div>
                             <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('Concert')}>Concerts</div>
@@ -146,7 +148,6 @@ export default function Gallery(data) {
                 {
                     items.map((elem) => {
                         const { id, image, category } = elem;
-
                         return (
                             <div>
                                 <div className="relative w-[360px] h-[240px] lg:w-[330px] lg:h-[230px] xl:w-[390px] xl:h-[260px] 2xl:w-[450px] 2xl:h-[300px]">
