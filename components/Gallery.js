@@ -16,22 +16,22 @@ export default function Gallery(data) {
 
         {
             id: 2,
-            image: "/images/second.jpg",
+            image: "/images/heroHighQuality/3.jpg",
             category: "Wedding",
         },
         {
             id: 3,
-            image: "/images/first.jpg",
+            image: "/images/heroHighQuality/4.jpg",
             category: "Wedding",
         },
         {
             id: 4,
-            image: "/images/first.jpg",
+            image: "/images/heroHighQuality/5.jpg",
             category: "Wedding",
         },
         {
             id: 5,
-            image: "/images/first.jpg",
+            image: "/images/heroHighQuality/2.jpg",
             category: "Wedding",
         },
         {
