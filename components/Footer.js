@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer(data) {
     return (
         <>
-            <div className=' bg-pink bg-opacity-25 h-[180px]'>
+            <div className=' bg-grey bg-opacity-25 h-[180px]'>
                 <div className="max-w-1440px m-auto">
                     <div>
 

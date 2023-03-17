@@ -1,7 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import Script from 'next/script';
-import { InlineWidget } from "react-calendly";
+import Calendly from "./Calendly";
 
 export default function Book(data) {
     return (
@@ -17,9 +14,7 @@ export default function Book(data) {
                         </svg>
                     </div>
                 </div>
-                <div className="mt-6 sm:-mt-5 md:mt-0">
-                    <InlineWidget styles={{height: '102vh'}} url="https://calendly.com/terezieprchalova/wedding-consultation?primary_color=e198c2" />
-                </div>
+                <Calendly/>
             </div>
         </>
     );
