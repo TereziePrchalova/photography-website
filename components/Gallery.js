@@ -129,7 +129,7 @@ export default function Gallery({section}) {
                             return (
                                 <div>
                                     <div className="pics unset-img-gallery">
-                                        <Image className="rounded-[12px] custom-img-gallery" src={image} alt="me" objectFit="cover" layout="fill"/>
+                                        <Image className="rounded-[12px] custom-img-gallery" src={image} alt="me" fill/>
                                     </div>
                                 </div>
                             )
