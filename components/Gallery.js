@@ -111,24 +111,24 @@ export default function Gallery({section}) {
     return (
         <>
             <div className="">
-                <div className="fixed w-full top-[7rem] z-40 left-0 md:top-[6rem] bg-lightWhite xl:top-[9rem]">
-                    <div className="relative flex flex-col justify-start pt-4 pb-6 px-6 md:flex-row md:pt-8 md:pb-4 md:px-8 lg:px-12 lg:pb-5 xl:px-12 max-w-[1440px] xl:m-auto xl:pt-4">
+                <div className="fixed w-full top-[7rem] z-40 left-0 md:top-[5rem] bg-lightWhite xl:top-[9rem]">
+                    <div className="relative flex flex-col justify-start pb-6 px-6 md:flex-row md:pt-8 md:pb-4 md:px-8 lg:pt-12 lg:px-12 lg:pb-5 xl:px-12 max-w-[1440px] xl:m-auto xl:pt-4">
                         <h1 className='h1 leading-10 md:leading-tight'>Portfolio</h1>
                         <div className="mt-1 md:my-auto md:ml-8">
                             <div className={`${active == 'all' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('all'), setItems(Gallery);}}>All</div>
-                            <div className={`${active == 'wedding' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4`} onClick={() => {setActive('wedding'), filterItem('wedding');}} >Weddings</div>
+                            <div className={`${active == 'wedding' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4 md:mx-6`} onClick={() => {setActive('wedding'), filterItem('wedding');}} >Weddings</div>
                             <div className={`${active == 'portrait' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('portrait'), filterItem('portrait');}}>Portraits</div>
-                            <div className={`${active == 'concert' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4`} onClick={() => {setActive('concert'), filterItem('concert');}}>Concerts</div>
+                            <div className={`${active == 'concert' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4 md:mx-6`} onClick={() => {setActive('concert'), filterItem('concert');}}>Concerts</div>
                         </div>
                     </div>
                 </div>
-                <div className="columns-3">
+                <div className="columns-1 mx-4 md:mx-0 md:columns-2 lg:columns-3">
                     {
                         items.map((elem) => {
                             const { id, image, category } = elem;
                             return (
                                 <div>
-                                    <div className="pics unset-img-gallery">
+                                    <div className="pics unset-img-gallery mb-4 cursor-pointer">
                                         <Image className="rounded-[12px] custom-img-gallery" src={image} alt="me" fill/>
                                     </div>
                                 </div>
