@@ -1,23 +1,21 @@
 import Image from "next/image";
-import Link from "next/link";
-import Document from "next/document";
 import { useEffect } from "react";
 import { useState } from "react";
 
 export default function Gallery({section}) {
 
-    console.log(section)
-
     const Gallery = [
 
         {
             id: 1,
+            image1: "/images/first.jpg",
             image: "/images/heroHighQuality/2.jpg",
             category: "wedding",
         },
 
         {
             id: 2,
+            image1: "/images/second.jpg",
             image: "/images/heroHighQuality/3.jpg",
             category: "wedding",
         },
@@ -106,7 +104,14 @@ export default function Gallery({section}) {
         }
 
       }, []);
-      
+
+      const [modal, setModal] = useState(false);
+      const [tempImgSrc, setTempImgSrc] = useState('');
+  
+      const getImg = (imgSrc) => {
+          setTempImgSrc(imgSrc);
+          setModal(true);
+      }
 
     return (
         <>
@@ -122,13 +127,28 @@ export default function Gallery({section}) {
                         </div>
                     </div>
                 </div>
+
+                <div className={`${modal ? "flex w-screen h-screen fixed top-0 left-0 justify-center items-center bg-white z-[200]" : "hidden" }`}>
+                    <div className="unset-img">
+                        <Image className="custom-img" src={tempImgSrc} alt="me" fill/>
+                    </div>
+                    <div className='close-btn fixed z-[201] select-none w-auto right-8 top-9 md:top-8 cursor-pointer' onClick={() => setModal(false)}>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3.03711" y="1.09048" width="12" height="3" rx="1" transform="rotate(44.3233 3.03711 1.09048)" fill="black"/>
+                            <rect x="15.9629" y="17.9095" width="12" height="3" rx="1" transform="rotate(-135.677 15.9629 17.9095)" fill="black"/>
+                            <rect x="11.6211" y="9.47495" width="12" height="3" rx="1" transform="rotate(134.323 11.6211 9.47495)" fill="black"/>
+                            <rect x="7.37891" y="9.52505" width="12" height="3" rx="1" transform="rotate(-45.6767 7.37891 9.52505)" fill="black"/>
+                        </svg>
+                    </div>
+                </div>
+
                 <div className="columns-1 mx-4 md:mx-0 md:columns-2 lg:columns-3">
                     {
-                        items.map((elem) => {
-                            const { id, image, category } = elem;
+                        items.map((elem, item) => {
+                            const { id, image1, image, category } = elem;
                             return (
                                 <div>
-                                    <div className="pics unset-img-gallery mb-4 cursor-pointer">
+                                    <div className="pics unset-img-gallery mb-4 cursor-pointer" onClick={() => getImg(image)}>
                                         <Image className="rounded-[12px] custom-img-gallery" src={image} alt="me" fill/>
                                     </div>
                                 </div>

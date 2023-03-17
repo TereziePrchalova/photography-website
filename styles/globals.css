@@ -134,3 +134,7 @@ a {
 .pics {
   transition: all 350ms ease;
 }
+
+.pics:hover {
+  filter: opacity(.8);
+}
