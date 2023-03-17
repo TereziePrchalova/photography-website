@@ -26,6 +26,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #F8F8F8;
   font-family: "obviously", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -71,7 +72,7 @@ a {
 .custom-img {
   object-fit: contain;
   position: relative !important;
-  width: auto !important;
+  width: 100% !important;
   margin: auto;
   height: 100% !important;
   max-width: 1512px;
@@ -79,24 +80,10 @@ a {
 
 .unset-img {
   height: 100% !important;
-  width: auto !important;
+  width: 100% !important;
 }
 
 .unset-img > div {
-  position: unset !important;
-}
-
-.custom-img2 {
-  object-fit: contain;
-  position: relative !important;
-  max-width: 1512px;
-}
-
-.unset-img2 {
-  width: 35%;
-}
-
-.unset-img2 > div {
   position: unset !important;
 }
 
