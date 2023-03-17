@@ -122,7 +122,7 @@ export default function Gallery({section}) {
                         </div>
                     </div>
                 </div>
-                <div className="gallery">
+                <div className="columns-3">
                     {
                         items.map((elem) => {
                             const { id, image, category } = elem;
