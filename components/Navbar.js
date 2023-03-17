@@ -152,7 +152,7 @@ export default function Navbar(data) {
             <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
                 <Link className='link select-none mb-4' onClick={menuToggle} href="/">Home</Link>
                 <Link className='link select-none mb-4' onClick={menuToggle} href="/portfolio">Portfolio</Link>
-                <Link className='link select-none' onClick={menuToggle} href="/">Contact</Link>
+                <Link className='link select-none' onClick={menuToggle} href="/contact">Contact</Link>
             </div>
             
             <div className='absolute bottom-[245px] right-8'>
