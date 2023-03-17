@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 import Document from "next/document";
 import { useEffect } from "react";
+import { useState } from "react";
 
 export default function Gallery({section}) {
 
@@ -96,51 +96,17 @@ export default function Gallery({section}) {
 
     }
 
+    const [active, setActive] = useState('all');
+
     useEffect(() => {
 
         if (section) {
             filterItem(section);
+            setActive(section);
         }
 
       }, []);
-
-    let activeDiv = null;
-
-    useEffect(() => {
-
-        const all = document.querySelector(".all")
-
-        function toggleDiv(div) {
-
-            if (activeDiv === div) {
-        // Clicked on the same active div, reset to default state
-                all.style.color = "black";
-                div.style.color = "black";
-                activeDiv = null;
-            } else {
-        // Clicked on a new div
-                if (activeDiv) {
-            // Reset the previously active div to default state
-                    activeDiv.style.color = "black";
-                    all.style.color = "black";
-                }
-    
-            // Set the new div as active
-                div.style.color = "#EDAEA8";
-                activeDiv = div;
-            }
-        }
-
-        const divs = document.querySelectorAll(".clickable");
-  
-        for (let i = 0; i < divs.length; i++) {
-            let div = divs[i];
-            div.addEventListener("click", function() {
-                toggleDiv(this);
-            });
-        }
-      });
-
+      
 
     return (
         <>
@@ -149,10 +115,10 @@ export default function Gallery({section}) {
                     <div className="relative flex flex-col justify-start pt-4 pb-6 px-6 md:flex-row md:pt-8 md:pb-4 md:px-8 lg:px-12 lg:pb-5 xl:px-12 max-w-[1440px] xl:m-auto xl:pt-4">
                         <h1 className='h1 leading-10 md:leading-tight'>Portfolio</h1>
                         <div className="mt-1 md:my-auto md:ml-8">
-                            <div className='all text-pink clickable inline cursor-pointer' onClick={() => setItems(Gallery)}>All</div>
-                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('wedding')} >Weddings</div>
-                            <div className='clickable inline cursor-pointer' onClick={() => filterItem('portrait')}>Portraits</div>
-                            <div className='clickable inline cursor-pointer mx-4 md:mx-8' onClick={() => filterItem('concert')}>Concerts</div>
+                            <div className={`${active == 'all' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('all'), setItems(Gallery);}}>All</div>
+                            <div className={`${active == 'wedding' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4`} onClick={() => {setActive('wedding'), filterItem('wedding');}} >Weddings</div>
+                            <div className={`${active == 'portrait' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('portrait'), filterItem('portrait');}}>Portraits</div>
+                            <div className={`${active == 'concert' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4`} onClick={() => {setActive('concert'), filterItem('concert');}}>Concerts</div>
                         </div>
                     </div>
                 </div>

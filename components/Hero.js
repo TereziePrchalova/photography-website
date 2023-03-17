@@ -109,7 +109,7 @@ export default function Hero(data) {
             <div className='m-auto max-w-1440px'>
                 <div className="hidden mt-4 mb-14 m-auto md:flex md:flex-col md:items-center md:mt-8 md:mb-20 lg:flex lg:flex-row lg:w-1024px lg:justify-center xl:w-auto xl:justify-center xl:mx-12 xl:mb-[7rem]">
                     <div className="flex">
-                        <div className="group relative cursor-pointer" onClick={() => getImgVertical(Img2)}>
+                        <div className="group relative cursor-pointer" onClick={() => getImgHorizontal(Img2)}>
                             <div className="relative w-320px h-470px lg:w-250px lg:h-403px xl:w-330px xl:h-482px 2xl:w-390px 2xl:h-542px">
                                 <Image className="rounded-[12px]" src={Img2} alt="me" objectFit="cover" layout="fill"/>
                             </div>
