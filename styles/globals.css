@@ -138,3 +138,28 @@ a {
 .pics:hover {
   filter: opacity(.8);
 }
+
+.rightArrowStyles {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 45px;
+  color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.leftArrowStyles {
+  position: absolute;
+  top: 48%;
+  left: 32px;
+  font-size: 45px;
+  transform: rotate(-180deg);
+  transform: scaleX(-1);
+  filter: fliph;
+  color: black;
+  z-index: 1;
+  cursor: pointer;
+}
+
+

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Calendly from '../components/Calendly'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -12,6 +13,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <div>
         <Navbar/>
+        <div className='hidden'>
+          <Calendly/>
+        </div>
         <Component {...pageProps} />
         <Footer/>
       </div>
