@@ -9,7 +9,7 @@ export default function About(data) {
                         <h2 className='h2 text-transparent bg-clip-text bg-gradient-to-br from-orange to-purple w-max'>A little bit about me</h2>
                     </div>
                     <div className="w-full my-auto">
-                        <svg width="100%" height="1" viewBox="0 0 100% 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="100%" height="1" viewBox="0 0 full 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line y1="0.5" x2="100%" y2="0.5" stroke="#E597C8"/>
                         </svg>
                     </div>
