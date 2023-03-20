@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 export default function Gallery({section}) {
 
@@ -96,9 +97,13 @@ export default function Gallery({section}) {
 
     const [items, setItems] = useState(images);
 
+    const top = () => {
+        window.scrollTo(0,0);   
+    };
+
     const filterItem = (categItem) => {
         const updatedItems = images.filter((curElem) => {
-
+            window.scrollTo(0,0);
             return curElem.category === categItem;
         });
 
@@ -148,12 +153,12 @@ export default function Gallery({section}) {
 
     return (
         <>
-            <div className="">
-                <div className="fixed w-full top-[7rem] z-40 left-0 md:top-[5rem] bg-lightWhite xl:top-[9rem]">
-                    <div className="relative flex flex-col justify-start pb-6 px-6 md:flex-row md:pt-8 md:pb-4 md:px-8 lg:pt-12 lg:px-12 lg:pb-5 xl:px-12 max-w-[1440px] xl:m-auto xl:pt-4">
+            <div>
+                <div className="sticky top-0 w-full z-40 left-0  bg-lightWhite">
+                    <div className="relative max-w-[1440px] flex flex-col justify-start -mt-4 p-6 md:flex-row md:pt-8 md:pb-4 md:px-0 md:-mt-8 lg:-mt-9 lg:pt-9 lg:pb-5 xl:mx-auto xl:pt-6 xl:mb-2 xl:-mt-6">
                         <h1 className='h1 leading-10 md:leading-tight'>Portfolio</h1>
                         <div className="mt-1 md:my-auto md:ml-8">
-                            <div className={`${active == 'all' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('all'), setItems(images);}}>All</div>
+                            <div className={`${active == 'all' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('all'), setItems(images), top();}}>All</div>
                             <div className={`${active == 'wedding' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4 md:mx-6`} onClick={() => {setActive('wedding'), filterItem('wedding');}} >Weddings</div>
                             <div className={`${active == 'portrait' ? 'text-pink' : 'text-black'} inline cursor-pointer`} onClick={() => {setActive('portrait'), filterItem('portrait');}}>Portraits</div>
                             <div className={`${active == 'concert' ? 'text-pink' : 'text-black'} inline cursor-pointer mx-4 md:mx-6`} onClick={() => {setActive('concert'), filterItem('concert');}}>Concerts</div>
@@ -163,16 +168,20 @@ export default function Gallery({section}) {
 
                 <div className={`${modal ? "flex w-screen h-screen fixed top-0 left-0 justify-center items-center bg-white z-[200]" : "hidden" }`}>
                     <div>
-                        <div onClick={prevSlide} className="leftArrowStyles">
-                            &#10157;
+                        <div onClick={prevSlide} className="absolute cursor-pointer top-[50%] left-8 z-10">
+                            <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="9.02148" y="16.9694" width="12" height="3" rx="1" transform="rotate(-135.677 9.02148 16.9694)" fill="black"/>
+                                <rect x="0.4375" y="8.5849" width="12" height="3" rx="1" transform="rotate(-45.6767 0.4375 8.5849)" fill="black"/>
+                            </svg>
                         </div>
-                        <div onClick={nextSlide} className="rightArrowStyles">
-                            &#10157;
+                        <div onClick={nextSlide} className="absolute cursor-pointer top-[50%] right-8 z-10">
+                            <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2.0957" width="12" height="3" rx="1" transform="rotate(44.3233 2.0957 0)" fill="black"/>
+                                <rect x="10.6797" y="8.38446" width="12" height="3" rx="1" transform="rotate(134.323 10.6797 8.38446)" fill="black"/>
+                            </svg>
                         </div>
                     </div>
-                    <div className="unset-img">
-                        <Image className="custom-img" src={items[slideNumber].imageHigh} alt='' fill/>
-                    </div>
+                    <Image className="object-contain" src={items[slideNumber].imageHigh} alt='' fill/>
                     <div className='close-btn fixed z-[201] select-none w-auto right-8 top-9 md:top-8 cursor-pointer' onClick={() => setModal(false)}>
                         <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="3.03711" y="1.09048" width="12" height="3" rx="1" transform="rotate(44.3233 3.03711 1.09048)" fill="black"/>
@@ -215,14 +224,14 @@ export default function Gallery({section}) {
                     }
                 */}
 
-                <div className="columns-1 mx-4 md:mx-0 md:columns-2 lg:columns-3">
+                <div className="columns-1 md:columns-2 lg:columns-3">
                     {
                         items.map((item, index) => {
                             const { imageHigh, image, } = item;
                             return (
                                 <div>
-                                    <div className="pics unset-img-gallery mb-4 cursor-pointer" key={image} onClick={() => getImg(index)}>
-                                        <Image key={image} className="rounded-[12px] custom-img-gallery" src={image} alt="me" fill/>
+                                    <div className="transition-all duration-300 ease-in-out h-full w-full mb-4 cursor-pointer hover:opacity-80" key={image} onClick={() => getImg(index)}>
+                                        <Image key={image} className="object-contain !relative" src={image} alt="me" fill/>
                                     </div>
                                 </div>
                             )

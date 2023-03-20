@@ -15,7 +15,7 @@ export default function Work(data) {
                         </svg>
                     </div>
                 </div>
-                <div className="mt-8 pb-14 md:flex md:w-696px md:mx-auto lg:w-942px xl:w-1188px 2xl:w-1344px">
+                <div className="mt-8 pb-14 md:flex md:w-696px md:mx-auto lg:w-942px xl:w-1188px xl:mt-12 xl:pb-20 2xl:w-1344px">
                     <div>
                         <div className="flex justify-center">
                             <div className="group relative">

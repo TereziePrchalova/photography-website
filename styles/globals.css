@@ -54,6 +54,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @layer components {
@@ -67,38 +68,6 @@ a {
   .p { @apply font-GilroyLight text-14px md:text-18px 2xl:text-18px }
   .link { @apply font-GilroyBold text-28px }
   .linkDesktop { @apply font-GilroyBold text-18px }
-}
-
-.custom-img {
-  object-fit: contain;
-  position: relative !important;
-  width: 100% !important;
-  margin: auto;
-  height: 100% !important;
-  max-width: 1512px;
-}
-
-.unset-img {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.unset-img > div {
-  position: unset !important;
-}
-
-.custom-img-gallery {
-  object-fit: contain;
-  position: relative !important;
-}
-
-.unset-img-gallery {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.unset-img-gallery > div {
-  position: unset !important;
 }
 
 /* Navbar links hover underline animation on devices supporting hover */
@@ -128,38 +97,7 @@ a {
 
 .anim_underline_active:after {
   transform: scaleX(1);
-  background-color: #EDAEA8;
-}
-
-.pics {
-  transition: all 350ms ease;
-}
-
-.pics:hover {
-  filter: opacity(.8);
-}
-
-.rightArrowStyles {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 45px;
-  color: black;
-  z-index: 1;
-  cursor: pointer;
-}
-
-.leftArrowStyles {
-  position: absolute;
-  top: 48%;
-  left: 32px;
-  font-size: 45px;
-  transform: rotate(-180deg);
-  transform: scaleX(-1);
-  filter: fliph;
-  color: black;
-  z-index: 1;
-  cursor: pointer;
+  background-color: #af99cc;
 }
 
 

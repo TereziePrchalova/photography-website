@@ -18,8 +18,9 @@ module.exports = {
         "black": "#000000",
         "grey": "#565656",
         "orange": "#F2AE7A",
-        "purple": "#E597C8",
-        "pink": "#EDAEA8",
+        "purple": "#979CE6",
+        "magenta": "#D996A2",
+        "pink": "#af99cc",
         "lightWhite": "#F8F8F8",
       },
 
