@@ -68,6 +68,7 @@ a {
   .p { @apply font-GilroyLight text-14px md:text-18px 2xl:text-18px }
   .link { @apply font-GilroyBold text-28px }
   .linkDesktop { @apply font-GilroyBold text-18px }
+  .footer { @apply font-GilroyBold text-14px }
 }
 
 /* Navbar links hover underline animation on devices supporting hover */

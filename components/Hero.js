@@ -72,7 +72,7 @@ export default function Hero(data) {
             </div>
 
             <div className={`${modal ? "flex w-screen h-screen fixed top-0 left-0 justify-center items-center bg-white z-[200]" : "hidden" }`}>
-                <Image className="object-contain max-w-[1512px]" src={tempImgSrc} alt="me" fill/>
+                <Image className="object-contain m-auto max-w-[1512px]" src={tempImgSrc} alt="me" fill/>
                 <div className='close-btn fixed z-[201] select-none w-auto right-8 top-9 md:top-8 cursor-pointer' onClick={() => setModal(false)}>
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="3.03711" y="1.09048" width="12" height="3" rx="1" transform="rotate(44.3233 3.03711 1.09048)" fill="black"/>
