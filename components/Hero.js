@@ -46,7 +46,7 @@ export default function Hero(data) {
         <>
             <div className='my-4 md:hidden'>
                 <div className="relative w-330px h-220px m-auto">
-                    <Image className="rounded-[12px]" src={Img1} alt="me" layout="fill"/>
+                    <Image className="object-cover" src={Img1} alt="me" fill/>
                 </div>
                 <div className="my-4 mx-auto w-330px">
                     <h2 className="h2">Moments that matter</h2>
@@ -57,14 +57,14 @@ export default function Hero(data) {
                 </div>
                 <div className="flex justify-center mt-8 mb-16">
                     <div className="relative w-160px h-240px mr-4">
-                        <Image className="rounded-[12px]" src={Img2} alt="me" objectFit="cover" layout="fill"/>
+                        <Image className="object-cover" src={Img2} alt="me" fill/>
                     </div>
                     <div>
                         <div className="relative w-154px h-154px mb-4">
-                            <Image className="rounded-[12px]" src={Img3} alt="me" objectFit="cover" layout="fill"/>
+                            <Image className="object-cover" src={Img3} alt="me" fill/>
                         </div>
                         <div className="relative w-154px h-154px">
-                            <Image className="rounded-[12px]" src={Img4} alt="me" objectFit="cover" layout="fill"/>
+                            <Image className="object-cover" src={Img4} alt="me" fill/>
                         </div>
 
                     </div>
