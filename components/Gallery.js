@@ -221,8 +221,8 @@ export default function Gallery({section}) {
                             const { imageHigh, image, } = item;
                             return (
                                 <div>
-                                    <div className="pics unset-img-gallery mb-4 cursor-pointer" key={index} onClick={() => getImg(index)}>
-                                        <Image className="rounded-[12px] custom-img-gallery" src={image} alt="me" fill/>
+                                    <div className="pics unset-img-gallery mb-4 cursor-pointer" key={image} onClick={() => getImg(index)}>
+                                        <Image key={image} className="rounded-[12px] custom-img-gallery" src={image} alt="me" fill/>
                                     </div>
                                 </div>
                             )
