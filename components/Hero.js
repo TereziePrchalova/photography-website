@@ -52,7 +52,7 @@ export default function Hero(data) {
                     <h2 className="h2">Moments that matter</h2>
                     <p className="p w-300px mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                     <a href="/portfolio">
-                        <button className="w-120px h-35px bg-black text-white rounded-[6px]">More</button>
+                        <button className="button w-120px h-35px bg-black text-white rounded-[6px]">More</button>
                     </a>
                 </div>
                 <div className="flex justify-center mt-8 mb-16">
@@ -102,7 +102,7 @@ export default function Hero(data) {
                             <h2 className="heroSubheadline md:-mb-2 lg:mt-4">Moments that matter</h2>
                             <p className="heroText w-300px mt-1 mb-6 xl:w-390px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                             <a href="/portfolio">
-                                <button className="w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-pink">More</button>
+                                <button className="button w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-pink">More</button>
                             </a>
                         </div>
                     </div>

@@ -7,8 +7,8 @@ import Work from "../components/Work";
 
 export default function Home() {
   return (
-    <div>
-      <div className="sticky top-0 z-50">
+    <div className="pt-[7rem] lg:pt-[8rem] xl:pt-[10rem]">
+      <div className="fixed w-full top-0 z-50">
         <Navbar/>
       </div>
       <HeroText/>

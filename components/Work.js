@@ -6,8 +6,8 @@ export default function Work(data) {
         <>
             <div className='max-w-1440px m-auto'>
                 <div className="flex justify-between w-screen pl-6 md:pl-10 xl:pl-12">
-                    <div className="w-140px mr-3 md:w-155px md:mr-3 xl:w-170px xl:mr-4">
-                        <h2 className='h2 text-black'>My work</h2>
+                    <div className="mr-3 xl:mr-4">
+                        <h2 className='h2 text-black w-max'>My work</h2>
                     </div>
                     <div className="w-full my-auto pt-1">
                         <svg width="100%" height="1" viewBox="0 0 100% 1" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,7 +64,7 @@ export default function Work(data) {
                             </Link>
                         </div>
                         <a href="/portfolio">
-                            <button className="w-120px h-35px bg-black text-white rounded-[6px] md:absolute md:bottom-0 lg:w-150px lg:h-40px transition-all duration-500 hover:bg-pink">Portfolio</button>
+                            <button className="button w-120px h-35px bg-black text-white rounded-[6px] md:absolute md:bottom-0 lg:w-150px lg:h-40px transition-all duration-500 hover:bg-pink">Portfolio</button>
                         </a>
                     </div>
                 </div>

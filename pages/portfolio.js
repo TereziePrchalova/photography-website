@@ -8,7 +8,7 @@ export default function portfolio() {
   const router = useRouter();
 
   return (
-    <div>
+    <div className="h-screen-safe">
       <div className="sticky z-50">
         <Navbar/>
       </div>

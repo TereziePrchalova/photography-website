@@ -104,7 +104,7 @@ export default function Navbar(data) {
               </div>
           </nav>
 
-          <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen-safe absolute top-0 left-0 z-50 bg-lightWhite lg:hidden`}>
+          <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen absolute top-0 left-0 z-50 bg-lightWhite lg:hidden`}>
             <div className='absolute top-6 left-6 md:left-8 md:top-5'>
               <div className="relative w-120px h-65px xl:w-40 xl:h-32">
                 <Link href="/">
@@ -155,22 +155,17 @@ export default function Navbar(data) {
                 <Link className='link select-none' onClick={menuToggle} href="/contact">Contact</Link>
             </div>
             
-            <div className='absolute bottom-[245px] right-8'>
+            <div className='absolute bottom-[200px] right-9'>
               <svg width="1" height="240" viewBox="0 0 1 240" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="0.5" y1="439.018" x2="0.5" y2="-3.05176e-05" stroke="#565656"/>
               </svg>
             </div>
 
             <div className='absolute bottom-10 right-8'>
-              <svg width="7" height="163" viewBox="0 0 7 163" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="6.5" y1="156" x2="6.5" y2="163" stroke="#565656"/>
-                <line x1="6.5" y1="104" x2="6.5" y2="111" stroke="#565656"/>
-                <line x1="6.5" y1="52" x2="6.5" y2="59" stroke="#565656"/>
-                <line x1="6.5" x2="6.5" y2="7" stroke="#565656"/>
-                <line x1="7" y1="162.5" y2="162.5" stroke="#565656"/>
-                <line x1="7" y1="110.5" y2="110.5" stroke="#565656"/>
-                <line x1="7" y1="58.5" y2="58.5" stroke="#565656"/>
-                <line x1="7" y1="6.5" y2="6.5" stroke="#565656"/>
+              <svg width="11" height="116" viewBox="0 0 11 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.23333 9.58582L5.53333 16L4 9.55039L0 7.90255L3.75 6.53821L5.41667 0L7.16667 6.39646L11 8.00886L7.23333 9.58582Z" fill="black"/>
+                <path d="M7.23333 59.5858L5.53333 66L4 59.5504L0 57.9025L3.75 56.5382L5.41667 50L7.16667 56.3965L11 58.0089L7.23333 59.5858Z" fill="black"/>
+                <path d="M7.23333 109.586L5.53333 116L4 109.55L0 107.903L3.75 106.538L5.41667 100L7.16667 106.396L11 108.009L7.23333 109.586Z" fill="black"/>
               </svg>
             </div>
 
