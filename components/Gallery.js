@@ -215,7 +215,7 @@ export default function Gallery({section}) {
                     </div>
                     <Image 
                         className="object-contain m-auto max-w-[1512px]" 
-                        src={items[slideNumber].imageHigh} 
+                        src={items[slideNumber].image} 
                         alt='' 
                         quality={50}
                         fill
