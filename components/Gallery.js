@@ -216,7 +216,7 @@ export default function Gallery({section}) {
                     <Image 
                         className="object-contain m-auto max-w-[1512px]" 
                         src={items[slideNumber].image} 
-                        alt='' 
+                        alt='photo' 
                         quality={50}
                         fill
                     />
@@ -241,7 +241,7 @@ export default function Gallery({section}) {
                                             key={image} 
                                             className="object-contain !relative" 
                                             src={image} 
-                                            alt="me" 
+                                            alt="photo" 
                                             quality={25}
                                             fill
                                         />
