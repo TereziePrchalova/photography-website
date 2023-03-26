@@ -150,9 +150,9 @@ export default function Navbar(data) {
             </div>
 
             <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
-                <Link className='link select-none mb-4' onClick={menuToggle} href="/">Home</Link>
-                <Link className='link select-none mb-4' onClick={menuToggle} href="/portfolio">Portfolio</Link>
-                <Link className='link select-none' onClick={menuToggle} href="/contact">Contact</Link>
+                <Link className={`${router.pathname == "/" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/">Home</Link>
+                <Link className={`${router.pathname == "/portfolio" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/portfolio">Portfolio</Link>
+                <Link className={`${router.pathname == "/contact" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/contact">Contact</Link>
             </div>
             
             <div className='absolute bottom-[200px] right-9'>

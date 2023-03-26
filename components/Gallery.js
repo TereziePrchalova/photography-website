@@ -8,14 +8,14 @@ export default function Gallery({section}) {
 
         {
             id: 0,
-            image: "/images/weddings/9.jpg",
+            image: "/images/weddings/3.jpg",
             category: "wedding",
         },
 
         {
             id: 1,
-            image: "/images/weddings/8.jpg",
-            category: "wedding",
+            image: "/images/concerts/5.jpg",
+            category: "concert",
         },
         {
             id: 2,
@@ -44,7 +44,7 @@ export default function Gallery({section}) {
         },
         {
             id: 7,
-            image: "/images/concerts/3.jpg",
+            image: "/images/concerts/2.jpg",
             category: "concert",
         },
         {
@@ -69,8 +69,8 @@ export default function Gallery({section}) {
         },
         {
             id: 12,
-            image: "/images/concerts/5.jpg",
-            category: "concert",
+            image: "/images/weddings/8.jpg",
+            category: "wedding",
         },
         {
             id: 13,
@@ -109,7 +109,7 @@ export default function Gallery({section}) {
         },
         {
             id: 20,
-            image: "/images/weddings/2.jpg",
+            image: "/images/weddings/9.jpg",
             category: "wedding",
         },
         {
