@@ -17,11 +17,7 @@ module.exports = {
         "white": "#FFFFFF",
         "black": "#000000",
         "grey": "#565656",
-        "orange": "#F2AE7A",
-        "purple": "#979CE6",
-        "magenta": "#D996A2",
-        "pink": "#af99cc",
-        "lightWhite": "#F8F8F8",
+        "purple": "#af99cc",
       },
 
       fontFamily: {

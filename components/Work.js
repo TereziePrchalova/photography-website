@@ -64,7 +64,7 @@ export default function Work(data) {
                             </Link>
                         </div>
                         <a href="/portfolio">
-                            <button className="button w-120px h-35px bg-black text-white rounded-[6px] md:absolute md:bottom-0 lg:w-150px lg:h-40px transition-all duration-500 hover:bg-pink">Portfolio</button>
+                            <button className="button w-120px h-35px bg-black text-white rounded-[6px] md:absolute md:bottom-0 lg:w-150px lg:h-40px transition-all duration-500 hover:bg-purple">Portfolio</button>
                         </a>
                     </div>
                 </div>

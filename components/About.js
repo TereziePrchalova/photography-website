@@ -6,7 +6,7 @@ export default function About(data) {
             <div className='max-w-1440px m-auto'>
                 <div className="flex justify-between w-screen pl-6 md:pl-10 xl:pl-12">
                     <div className="mr-3 xl:mr-4">
-                        <h2 className='h2 text-pink w-max'>A little bit about me</h2>
+                        <h2 className='h2 text-purple w-max'>A little bit about me</h2>
                     </div>
                     <div className="w-full my-auto pt-1">
                         <svg width="100%" height="1" viewBox="0 0 100% 1" fill="none" xmlns="http://www.w3.org/2000/svg">
