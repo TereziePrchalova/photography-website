@@ -205,7 +205,9 @@ export default function Gallery({section}) {
                         src={items[slideNumber].image} 
                         alt='photo' 
                         quality={25}
-                        loading="lazy"
+                        placeholder="blur"
+                        blurDataURL="/images/blurImage.jpg"
+                        loading="eager"
                         fill
                     />
                     <div className='close-btn fixed z-[201] select-none w-auto right-8 top-9 md:top-8 cursor-pointer' onClick={() => {setModal(false)}} >
@@ -221,17 +223,18 @@ export default function Gallery({section}) {
                 <div className="columns-1 md:columns-2 md:mb-4 lg:columns-3 ">
                     {
                         items.map((item, index) => {
-                            const { image } = item;
+                            const { image, blurImage } = item;
                             return (
                                 <div>
-                                    <div className="transition-all duration-300 ease-in-out h-full w-full mb-4 cursor-pointer hover:opacity-80" key={image} onClick={() => getImg(index)}>
+                                    <div className="transition-all duration-300 ease-in-out h-full w-full mb-4 cursor-pointer hover:opacity-80" onClick={() => getImg(index)}>
                                         <Image 
-                                            key={image} 
                                             className="object-contain !relative" 
                                             src={image} 
                                             alt="photo" 
                                             quality={25}
-                                            loading="lazy"
+                                            placeholder="blur"
+                                            blurDataURL="/images/blurImage.jpg"
+                                            loading="eager"
                                             fill
                                         />
                                     </div>
