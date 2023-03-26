@@ -59,8 +59,8 @@ export default function Gallery({section}) {
         },
         {
             id: 10,
-            image: "/images/portraits/3.jpg",
-            category: "portrait",
+            image: "/images/weddings/1.jpg",
+            category: "wedding",
         },
         {
             id: 11,
@@ -84,47 +84,57 @@ export default function Gallery({section}) {
         },
         {
             id: 15,
+            image: "/images/portraits/3.jpg",
+            category: "portrait",
+        },
+        {
+            id: 16,
             image: "/images/concerts/8.jpg",
             category: "concert",
         },
         {
-            id: 16,
+            id: 17,
             image: "/images/concerts/9.jpg",
             category: "concert",
         },
         {
-            id: 17,
+            id: 18,
             image: "/images/concerts/10.jpg",
             category: "concert",
         },
         {
-            id: 18,
+            id: 19,
             image: "/images/weddings/7.jpg",
             category: "wedding",
         },
         {
-            id: 19,
+            id: 20,
             image: "/images/weddings/2.jpg",
             category: "wedding",
         },
         {
-            id: 20,
+            id: 21,
             image: "/images/weddings/3.jpg",
             category: "wedding",
         },
         {
-            id: 21,
+            id: 22,
             image: "/images/weddings/4.jpg",
             category: "wedding",
         },
         {
-            id: 22,
+            id: 23,
             image: "/images/portraits/4.jpg",
             category: "portrait",
         },
         {
-            id: 23,
+            id: 24,
             image: "/images/portraits/5.jpg",
+            category: "portrait",
+        },
+        {
+            id: 25,
+            image: "/images/portraits/10.jpg",
             category: "portrait",
         },
     ]
