@@ -34,7 +34,7 @@ export default function Navbar(data) {
 
   return (
     <>
-      <div className="w-full bg-lightWhite xl:mb-4">
+      <div className="w-full bg-white xl:mb-4">
           <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:px-12 lg:py-8 xl:pt-12 xl:pb-8 xl:px-12 max-w-1440px xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-120px h-65px">
@@ -104,7 +104,7 @@ export default function Navbar(data) {
               </div>
           </nav>
 
-          <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen absolute top-0 left-0 z-50 bg-lightWhite lg:hidden`}>
+          <div className={`mobile-menu ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-all w-screen h-screen absolute top-0 left-0 z-50 bg-white lg:hidden`}>
             <div className='absolute top-6 left-6 md:left-8 md:top-5'>
               <div className="relative w-120px h-65px xl:w-40 xl:h-32">
                 <Link href="/">
