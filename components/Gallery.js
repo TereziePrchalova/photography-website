@@ -64,7 +64,7 @@ export default function Gallery({section}) {
         },
         {
             id: 11,
-            image: "/images/first.jpg",
+            image: "/images/portraits/1.jpg",
             category: "portrait",
         },
         {
@@ -116,7 +116,17 @@ export default function Gallery({section}) {
             id: 21,
             image: "/images/weddings/4.jpg",
             category: "wedding",
-        }
+        },
+        {
+            id: 22,
+            image: "/images/portraits/4.jpg",
+            category: "portrait",
+        },
+        {
+            id: 23,
+            image: "/images/portraits/5.jpg",
+            category: "portrait",
+        },
         
     ]
 
@@ -204,7 +214,7 @@ export default function Gallery({section}) {
                         className="object-contain m-auto max-w-[1512px]" 
                         src={items[slideNumber].image} 
                         alt='photo' 
-                        quality={25}
+                        quality={70}
                         placeholder="blur"
                         blurDataURL="/images/blurImage.jpg"
                         loading="eager"
@@ -231,7 +241,7 @@ export default function Gallery({section}) {
                                             className="object-contain !relative" 
                                             src={image} 
                                             alt="photo" 
-                                            quality={25}
+                                            quality={70}
                                             placeholder="blur"
                                             blurDataURL="/images/blurImage.jpg"
                                             loading="eager"
