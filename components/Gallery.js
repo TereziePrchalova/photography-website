@@ -14,7 +14,7 @@ export default function Gallery({section}) {
 
         {
             id: 1,
-            image: "/images/weddings/4.jpg",
+            image: "/images/weddings/8.jpg",
             category: "wedding",
         },
         {
@@ -49,7 +49,7 @@ export default function Gallery({section}) {
         },
         {
             id: 8,
-            image: "/images/concerts/8.jpg",
+            image: "/images/concerts/4.jpg",
             category: "concert",
         },
         {
