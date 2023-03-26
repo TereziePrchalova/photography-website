@@ -8,113 +8,115 @@ export default function Gallery({section}) {
 
         {
             id: 0,
-            imageHigh: "/images/heroHighQuality/2.jpg",
-            image: "/images/heroHighQuality/2.jpg",
+            image: "/images/weddings/9.jpg",
             category: "wedding",
         },
 
         {
             id: 1,
-            imageHigh: "/images/heroHighQuality/3.jpg",
-            image: "/images/heroHighQuality/3.jpg",
+            image: "/images/weddings/4.jpg",
             category: "wedding",
         },
         {
             id: 2,
-            imageHigh: "/images/heroHighQuality/5.jpg",
-            image: "/images/heroHighQuality/5.jpg",
+            image: "/images/weddings/12.jpg",
             category: "wedding",
         },
         {
             id: 3,
-            imageHigh: "/images/heroHighQuality/5.jpg",
-            image: "/images/heroHighQuality/5.jpg",
+            image: "/images/weddings/14.jpg",
             category: "wedding",
         },
         {
             id: 4,
-            imageHigh: "/images/heroHighQuality/2.jpg",
-            image: "/images/heroHighQuality/2.jpg",
+            image: "/images/weddings/6.jpg",
             category: "wedding",
         },
         {
             id: 5,
-            imageHigh: "/images/concerts/highQuality/1.jpg",
             image: "/images/concerts/1.jpg",
             category: "concert",
         },
         {
             id: 6,
-            imageHigh: "/images/concerts/highQuality/2.jpg",
             image: "/images/concerts/2.jpg",
             category: "concert",
         },
         {
             id: 7,
-            imageHigh: "/images/concerts/highQuality/3.jpg",
             image: "/images/concerts/3.jpg",
             category: "concert",
         },
         {
             id: 8,
-            imageHigh: "/images/concerts/highQuality/4.jpg",
             image: "/images/concerts/4.jpg",
             category: "concert",
         },
         {
             id: 9,
-            imageHigh: "/images/portraits/highQuality/2.jpg",
             image: "/images/portraits/2.jpg",
             category: "portrait",
         },
         {
             id: 10,
-            imageHigh: "/images/portraits/highQuality/3.jpg",
             image: "/images/portraits/3.jpg",
             category: "portrait",
         },
         {
             id: 11,
-            imageHigh: "/images/first.jpg",
             image: "/images/first.jpg",
             category: "portrait",
         },
         {
             id: 12,
-            imageHigh: "/images/concerts/highQuality/5.jpg",
             image: "/images/concerts/5.jpg",
             category: "concert",
         },
         {
             id: 13,
-            imageHigh: "/images/concerts/highQuality/6.jpg",
             image: "/images/concerts/6.jpg",
             category: "concert",
         },
         {
             id: 14,
-            imageHigh: "/images/concerts/highQuality/7.jpg",
             image: "/images/concerts/7.jpg",
             category: "concert",
         },
         {
             id: 15,
-            imageHigh: "/images/concerts/highQuality/8.jpg",
             image: "/images/concerts/8.jpg",
             category: "concert",
         },
         {
             id: 16,
-            imageHigh: "/images/concerts/highQuality/9.jpg",
             image: "/images/concerts/9.jpg",
             category: "concert",
         },
         {
             id: 17,
-            imageHigh: "/images/concerts/highQuality/10.jpg",
             image: "/images/concerts/10.jpg",
             category: "concert",
         },
+        {
+            id: 18,
+            image: "/images/weddings/7.jpg",
+            category: "wedding",
+        },
+        {
+            id: 19,
+            image: "/images/weddings/2.jpg",
+            category: "wedding",
+        },
+        {
+            id: 20,
+            image: "/images/weddings/3.jpg",
+            category: "wedding",
+        },
+        {
+            id: 21,
+            image: "/images/weddings/4.jpg",
+            category: "wedding",
+        }
         
     ]
 
@@ -131,11 +133,7 @@ export default function Gallery({section}) {
         });
 
         setItems(updatedItems);
-        setSlideNumber(updatedItems[1].id);
-        updatedItems.forEach(e => {
-            console.log(e.id);
-        });
-        console.log()
+        setSlideNumber(0);
     }
 
     const [active, setActive] = useState('all');
@@ -153,14 +151,10 @@ export default function Gallery({section}) {
     const [slideNumber, setSlideNumber] = useState(0)
 
 
-    const getImg = (id) => {
-        setSlideNumber(id)
-        console.log("hello" + id)
+    const getImg = (index) => {
+        setSlideNumber(index)
+        console.log("hello" + index)
         setModal(true);
-    }
-
-    const hello = () => {
-        setSlideNumber(items[0].id)
     }
 
     const prevSlide = () => {
@@ -175,13 +169,6 @@ export default function Gallery({section}) {
         ? setSlideNumber(0) 
         : setSlideNumber(slideNumber + 1)
     }
-
-      {/*
-      const getImg = (index) => {
-          setTempImgSrc(Gallery[index].imageHigh);
-          setModal(true);
-      }
-    */}
 
     return (
         <>
@@ -217,7 +204,8 @@ export default function Gallery({section}) {
                         className="object-contain m-auto max-w-[1512px]" 
                         src={items[slideNumber].image} 
                         alt='photo' 
-                        quality={50}
+                        quality={25}
+                        loading="lazy"
                         fill
                     />
                     <div className='close-btn fixed z-[201] select-none w-auto right-8 top-9 md:top-8 cursor-pointer' onClick={() => {setModal(false)}} >
@@ -233,7 +221,7 @@ export default function Gallery({section}) {
                 <div className="columns-1 md:columns-2 md:mb-4 lg:columns-3 ">
                     {
                         items.map((item, index) => {
-                            const { imageHigh, image, } = item;
+                            const { image } = item;
                             return (
                                 <div>
                                     <div className="transition-all duration-300 ease-in-out h-full w-full mb-4 cursor-pointer hover:opacity-80" key={image} onClick={() => getImg(index)}>
@@ -243,6 +231,7 @@ export default function Gallery({section}) {
                                             src={image} 
                                             alt="photo" 
                                             quality={25}
+                                            loading="lazy"
                                             fill
                                         />
                                     </div>

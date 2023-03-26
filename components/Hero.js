@@ -30,7 +30,7 @@ export default function Hero(data) {
         {
             id: 5,
             imgSrc: Img5,
-        },
+        }
         
     ]
 
