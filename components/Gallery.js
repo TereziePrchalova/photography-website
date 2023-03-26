@@ -49,7 +49,7 @@ export default function Gallery({section}) {
         },
         {
             id: 8,
-            image: "/images/concerts/4.jpg",
+            image: "/images/concerts/8.jpg",
             category: "concert",
         },
         {
@@ -127,7 +127,6 @@ export default function Gallery({section}) {
             image: "/images/portraits/5.jpg",
             category: "portrait",
         },
-        
     ]
 
     const [items, setItems] = useState(images);
