@@ -8,13 +8,13 @@ export default function Gallery({section}) {
 
         {
             id: 0,
-            image: "/images/weddings/3.jpg",
+            image: "/images/weddings/9.jpg",
             category: "wedding",
         },
 
         {
             id: 1,
-            image: "/images/concerts/5.jpg",
+            image: "/images/concerts/3.jpg",
             category: "concert",
         },
         {
@@ -39,7 +39,7 @@ export default function Gallery({section}) {
         },
         {
             id: 6,
-            image: "/images/concerts/2.jpg",
+            image: "/images/concerts/5.jpg",
             category: "concert",
         },
         {
@@ -109,7 +109,7 @@ export default function Gallery({section}) {
         },
         {
             id: 20,
-            image: "/images/weddings/9.jpg",
+            image: "/images/weddings/10.jpg",
             category: "wedding",
         },
         {
@@ -131,11 +131,6 @@ export default function Gallery({section}) {
             id: 24,
             image: "/images/portraits/5.jpg",
             category: "portrait",
-        },
-        {
-            id: 25,
-            image: "/images/weddings/10.jpg",
-            category: "wedding",
         },
     ]
 
@@ -206,13 +201,13 @@ export default function Gallery({section}) {
 
                 <div className={`${modal ? "flex w-screen h-screen fixed top-0 left-0 justify-center items-center bg-white z-[200]" : "hidden" }`}>
                     <div>
-                        <div onClick={prevSlide} className="absolute cursor-pointer top-[50%] left-8 z-10">
+                        <div onClick={prevSlide} className="select-none absolute cursor-pointer top-[50%] left-8 z-10">
                             <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="9.02148" y="16.9694" width="12" height="3" rx="1" transform="rotate(-135.677 9.02148 16.9694)" fill="black"/>
                                 <rect x="0.4375" y="8.5849" width="12" height="3" rx="1" transform="rotate(-45.6767 0.4375 8.5849)" fill="black"/>
                             </svg>
                         </div>
-                        <div onClick={nextSlide} className="absolute cursor-pointer top-[50%] right-8 z-10">
+                        <div onClick={nextSlide} className="select-none absolute cursor-pointer top-[50%] right-8 z-10">
                             <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="2.0957" width="12" height="3" rx="1" transform="rotate(44.3233 2.0957 0)" fill="black"/>
                                 <rect x="10.6797" y="8.38446" width="12" height="3" rx="1" transform="rotate(134.323 10.6797 8.38446)" fill="black"/>
