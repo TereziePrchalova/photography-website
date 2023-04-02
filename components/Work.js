@@ -32,7 +32,7 @@ export default function Work(data) {
                         <div className="flex justify-center mt-4 xl:mt-6">
                             <div className="group relative cursor-pointer mr-4 xl:mr-6">
                                 <div className="relative w-157px h-157px md:w-147px md:h-147px lg:w-202px lg:h-202px xl:w-243px xl:h-243px">
-                                    <Image className="object-cover" src="/images/hero/heroSliderFourth.jpg" alt="photo" fill/>
+                                    <Image className="object-cover" src="/images/weddings/3.jpg" alt="photo" fill/>
                                 </div>
                                 <Link href="/portfolio?section=wedding">
                                     <div class="absolute top-0 left-0 w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
