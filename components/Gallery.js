@@ -218,7 +218,7 @@ export default function Gallery({section}) {
                         className="object-contain m-auto max-w-[1512px]" 
                         src={items[slideNumber].image} 
                         alt='photo' 
-                        quality={100}
+                        quality={70}
                         placeholder="blur"
                         blurDataURL="/images/blurImage.jpg"
                         loading="eager"
