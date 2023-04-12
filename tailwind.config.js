@@ -21,10 +21,10 @@ module.exports = {
       },
 
       fontFamily: {
-        RobotoBold: ['RobotoBold'],
-        RobotoMedium: ['RobotoMedium'],
-        RobotoRegular: ['RobotoRegular'],
-        RobotoLight: ['RobotoLight'],
+        PoppinsBold: ['PoppinsBold'],
+        PoppinsMedium: ['PoppinsMedium'],
+        PoppinsRegular: ['PoppinsRegular'],
+        PoppinsLight: ['PoppinsLight'],
       },
 
       borderRadius: {
