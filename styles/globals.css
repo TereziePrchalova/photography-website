@@ -61,9 +61,9 @@ a {
 }
 
 @layer components {
-  .h1 { @apply font-PoppinsBold tracking-wide leading-10 text-28px md:leading-tight md:text-42px xl:text-48px }
-  .h2 { @apply font-PoppinsBold tracking-wide text-24px md:text-32px xl:text-38px }
-  .copy { @apply font-PoppinsLight tracking-wide text-16px md:text-22px }
+  .h1 { @apply font-PoppinsBold tracking-wide leading-10 text-26px md:leading-normal md:text-42px xl:text-48px }
+  .h2 { @apply font-PoppinsBold tracking-wide text-22px md:text-32px xl:text-38px }
+  .copy { @apply font-PoppinsLight tracking-wide text-14px md:text-20px xl:text-22px }
   .heroSubheadline { @apply font-PoppinsBold tracking-wide text-24px md:text-30px lg:text-24px xl:text-30px }
   .heroText { @apply font-PoppinsLight tracking-wide text-14px md:text-16px lg:text-14px xl:text-18px }
   .button { @apply font-PoppinsMedium tracking-wide text-14px md:text-16px lg:text-14px xl:text-18px }

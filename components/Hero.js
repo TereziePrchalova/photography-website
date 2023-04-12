@@ -24,7 +24,7 @@ export default function Hero(data) {
                 </div>
                 <div className="my-4 mx-auto w-330px">
                     <h2 className="h2">Moments that matter</h2>
-                    <p className="p w-300px mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
+                    <p className="p mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                     <a href="/portfolio">
                         <button className="button w-120px h-35px bg-black text-white rounded-[6px]">More</button>
                     </a>
@@ -73,8 +73,8 @@ export default function Hero(data) {
                                 </div>
                                 <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
-                            <h2 className="heroSubheadline md:-mb-2 lg:mt-4">Moments that matter</h2>
-                            <p className="heroText w-300px mt-1 mb-6 xl:w-390px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
+                            <h2 className="heroSubheadline md:-mb-2 lg:mt-2">Moments that matter</h2>
+                            <p className="heroText w-358px mt-1 mb-6 lg:w-330px xl:w-450px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                             <a href="/portfolio">
                                 <button className="button w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-purple">More</button>
                             </a>
