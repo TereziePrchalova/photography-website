@@ -74,7 +74,7 @@ export default function Hero(data) {
                                 <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
                             <h2 className="heroSubheadline md:-mb-2 lg:mt-2">Moments that matter</h2>
-                            <p className="heroText w-358px mt-1 mb-6 lg:w-330px xl:w-450px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
+                            <p className="heroText w-358px mt-1 mb-6 lg:w-330px xl:w-390px 2xl:w-450px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                             <a href="/portfolio">
                                 <button className="button w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-purple">More</button>
                             </a>
