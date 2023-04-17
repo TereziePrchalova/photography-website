@@ -1,16 +1,12 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import useScrollPosition from '../hooks/scrollPosition';
 import { useRouter } from 'next/router';
 
 export default function Navbar(data) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const scrollPosition = useScrollPosition();
-
   const router = useRouter();
-
 
   useEffect(() => {
     document.querySelector('body').classList.remove('overflow-y-hidden');

@@ -7,113 +7,91 @@ export default function Gallery({section}) {
     const images = [
 
         {
-            id: 0,
             image: "/images/weddings/9.jpg",
             category: "wedding",
         },
 
         {
-            id: 1,
             image: "/images/concerts/3.jpg",
             category: "concert",
         },
         {
-            id: 2,
             image: "/images/weddings/12.jpg",
             category: "wedding",
         },
         {
-            id: 3,
             image: "/images/weddings/14.jpg",
             category: "wedding",
         },
         {
-            id: 4,
             image: "/images/weddings/6.jpg",
             category: "wedding",
         },
         {
-            id: 5,
             image: "/images/concerts/1.jpg",
             category: "concert",
         },
         {
-            id: 6,
             image: "/images/concerts/5.jpg",
             category: "concert",
         },
         {
-            id: 7,
             image: "/images/concerts/2.jpg",
             category: "concert",
         },
         {
-            id: 8,
             image: "/images/concerts/4.jpg",
             category: "concert",
         },
         {
-            id: 9,
             image: "/images/portraits/2.jpg",
             category: "portrait",
         },
         {
-            id: 10,
             image: "/images/weddings/1.jpg",
             category: "wedding",
         },
         {
-            id: 11,
             image: "/images/portraits/1.jpg",
             category: "portrait",
         },
         {
-            id: 12,
             image: "/images/weddings/8.jpg",
             category: "wedding",
         },
         {
-            id: 13,
             image: "/images/concerts/6.jpg",
             category: "concert",
         },
         {
-            id: 14,
             image: "/images/concerts/7.jpg",
             category: "concert",
         },
         {
-            id: 15,
             image: "/images/portraits/3.jpg",
             category: "portrait",
         },
         {
-            id: 16,
             image: "/images/concerts/8.jpg",
             category: "concert",
         },
         {
-            id: 17,
             image: "/images/concerts/9.jpg",
             category: "concert",
         },
         {
-            id: 18,
             image: "/images/concerts/10.jpg",
             category: "concert",
         },
         {
-            id: 19,
             image: "/images/weddings/7.jpg",
             category: "wedding",
         },
         {
-            id: 20,
             image: "/images/weddings/10.jpg",
             category: "wedding",
         },
         {
-            id: 21,
             image: "/images/weddings/3.jpg",
             category: "wedding",
         },
@@ -123,12 +101,10 @@ export default function Gallery({section}) {
             category: "wedding",
         },
         {
-            id: 23,
             image: "/images/portraits/4.jpg",
             category: "portrait",
         },
         {
-            id: 24,
             image: "/images/portraits/5.jpg",
             category: "portrait",
         },
@@ -167,7 +143,6 @@ export default function Gallery({section}) {
 
     const getImg = (index) => {
         setSlideNumber(index)
-        console.log("hello" + index)
         setModal(true);
     }
 
