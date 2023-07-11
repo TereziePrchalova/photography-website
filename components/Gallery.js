@@ -117,10 +117,6 @@ export default function Gallery({section}) {
             category: "wedding",
         },
         {
-            image: "/images/weddings/13.jpg",
-            category: "wedding",
-        },
-        {
             image: "/images/weddings/11.jpg",
             category: "wedding",
         },
