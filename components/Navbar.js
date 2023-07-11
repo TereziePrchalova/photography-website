@@ -41,9 +41,9 @@ export default function Navbar(data) {
               </div>
               <div className='hidden lg:block lg:border-b-[1px] lg:border-black lg:-mb-12 lg:w-full lg:mx-12 '></div>
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
-                <Link className={`${router.pathname == "/" ? "text-purple anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/">Home</Link>
-                <Link className={`${router.pathname == "/portfolio" ? "text-purple anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/portfolio">Portfolio</Link>
-                <Link className={`${router.pathname == "/contact" ? "text-purple anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/contact">Contact</Link>
+                <Link className={`${router.pathname == "/" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/">Home</Link>
+                <Link className={`${router.pathname == "/portfolio" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/portfolio">Portfolio</Link>
+                <Link className={`${router.pathname == "/contact" ? " anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/contact">Contact</Link>
               </div>
 
               <div className='hidden lg:block lg:absolute lg:top-10 lg:right-12 xl:top-14 xl:right-12'>

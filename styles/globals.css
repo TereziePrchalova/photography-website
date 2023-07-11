@@ -85,7 +85,7 @@ a {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1px;
+    height: 0.5px;
     bottom: 0;
     left: 0;
     background-color: #000;
@@ -101,7 +101,6 @@ a {
 
 .anim_underline_active:after {
   transform: scaleX(1);
-  background-color: #af99cc;
+  height: 1px;
+  background-color: #000;
 }
-
-
