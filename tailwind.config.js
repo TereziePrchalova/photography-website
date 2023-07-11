@@ -17,7 +17,6 @@ module.exports = {
         "white": "#FFFFFF",
         "black": "#000000",
         "grey": "#565656",
-        "purple": "#af99cc",
       },
 
       fontFamily: {
