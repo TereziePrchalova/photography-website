@@ -4,7 +4,10 @@ import Img1 from "../public/images/portraits/3.jpg"
 import Img2 from "../public/images/heroHighQuality/1.jpg"
 import Img3 from "../public/images/concerts/5.jpg"
 import Img4 from "../public/images/concerts/2.jpg"
-import Img5 from "../public/images/weddings/14.jpg"
+import Img5 from "../public/images/weddings/5.jpg"
+import Img6 from "../public/images/weddings/6.jpg"
+import Img7 from "../public/images/weddings/9.jpg"
+import Img8 from "../public/images/concerts/4.jpg"
 
 export default function Hero(data) {
 
@@ -18,12 +21,12 @@ export default function Hero(data) {
 
     return (
         <>
-            <div className='my-4 md:hidden'>
+            <div className='mobile my-4 md:hidden'>
                 <div className="relative w-330px h-220px m-auto">
                     <Image className="object-cover" src="/images/hero/3.jpg" alt="photo" fill/>
                 </div>
                 <div className="my-4 mx-auto w-330px">
-                    <h2 className="h2">Moments that matter</h2>
+                    <h2 className="font-PoppinsBold tracking-wide text-22px">Moments that matter</h2>
                     <p className="p mt-1 mb-6">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
                     <a href="/portfolio">
                         <button className="button w-120px h-35px bg-black text-white rounded-[6px]">More</button>
@@ -57,50 +60,72 @@ export default function Hero(data) {
                 </div>
             </div>
 
-            <div className='m-auto max-w-1440px'>
-                <div className="hidden mt-4 mb-14 m-auto md:flex md:flex-col md:items-center md:mt-8 md:mb-20 lg:flex lg:flex-row lg:w-1024px lg:justify-center xl:w-auto xl:justify-center xl:mx-12 xl:mb-[7rem]">
-                    <div className="flex">
-                        <div className="group relative cursor-pointer" onClick={() => getImg(Img2)}>
-                            <div className="relative w-320px h-470px lg:w-250px lg:h-403px xl:w-330px xl:h-482px 2xl:w-390px 2xl:h-542px">
-                                <Image className="object-cover" src="/images/hero/1.jpg" alt="photo" fill/>
-                            </div>
-                            <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
-                        </div>
-                        <div className="ml-4 flex flex-col justify-between xl:ml-6">
-                            <div className="group relative cursor-pointer" onClick={() => getImg(Img1)}>
-                                <div className="relative w-360px h-240px lg:w-330px lg:h-230px xl:w-390px xl:h-260px 2xl:w-450px 2xl:h-300px">
-                                    <Image className="object-cover" src="/images/hero/3.jpg" alt="photo" fill/>
+            <div className='m-auto lg:w-1024px xl:w-auto max-w-1440px'>
+                <div className="hidden mt-4 mb-14 m-auto md:block md:mt-8 md:mb-20 xl:mx-12 xl:mb-[7rem]">
+                    <div className="md:flex md:flex-col md:items-center lg:flex lg:flex-row lg:justify-center xl:w-auto">
+                        <div className="flex">
+                            <div className="group relative cursor-pointer" onClick={() => getImg(Img2)}>
+                                <div className="relative w-320px h-470px lg:w-250px lg:h-403px xl:w-330px xl:h-482px 2xl:w-390px 2xl:h-542px">
+                                    <Image className="object-cover" src="/images/hero/1.jpg" alt="photo" fill/>
                                 </div>
                                 <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
-                            <h2 className="heroSubheadline md:-mb-2 lg:mt-2">Moments that matter</h2>
-                            <p className="heroText w-358px mt-1 mb-6 lg:w-330px xl:w-390px 2xl:w-450px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
-                            <a href="/portfolio">
-                                <button className="button w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-grey">More</button>
-                            </a>
+                            <div className="ml-4 flex flex-col justify-between xl:ml-6">
+                                <div className="group relative cursor-pointer" onClick={() => getImg(Img1)}>
+                                    <div className="relative w-360px h-240px lg:w-330px lg:h-230px xl:w-390px xl:h-260px 2xl:w-450px 2xl:h-300px">
+                                        <Image className="object-cover" src="/images/hero/3.jpg" alt="photo" fill/>
+                                    </div>
+                                    <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                                </div>
+                                <h2 className="heroSubheadline md:-mb-2 lg:mt-2">Moments that matter</h2>
+                                <p className="heroText w-358px mt-1 mb-6 lg:w-330px xl:w-390px 2xl:w-450px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
+                                <a href="/portfolio">
+                                    <button className="button w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-grey">More</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="flex flex-col md:w-696px lg:w-auto lg:ml-4 xl:ml-6">
+                            <div className="group relative cursor-pointer mr-3 lg:mr-0" onClick={() => getImg(Img5)}>
+                                <div className="hidden cursor-pointer relative w-486px h-320px lg:block lg:w-330px lg:h-230px xl:w-420px xl:h-260px 2xl:w-460px 2xl:h-300px">
+                                    <Image className="object-cover" src={Img5} alt="photo" fill/>
+                                </div>
+                                <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                            </div>
+                            <div className="flex mt-4 xl:mt-6">
+                                <div className="group relative cursor-pointer mr-4 xl:mr-6" onClick={() => getImg(Img3)}>
+                                    <div className="relative w-250px h-[250px] lg:w-157px lg:h-157px xl:w-198px xl:h-198px 2xl:w-218px 2xl:h-218px">
+                                        <Image className="object-cover object-left" src={Img3} alt="photo" fill/>
+                                    </div>
+                                    <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                                </div>
+                                <div className="group relative cursor-pointer" onClick={() => getImg(Img4)}>    
+                                    <div className="relative w-235px h-235px md:w-[430px] md:h-[310px] lg:w-157px lg:h-157px xl:w-198px xl:h-198px 2xl:w-218px 2xl:h-218px">
+                                        <Image className="object-cover object-left" src={Img4} alt="photo" fill/>
+                                    </div>
+                                    <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-col md:w-696px lg:w-auto lg:ml-4 xl:ml-6">
-                        <div className="group relative cursor-pointer mr-3 lg:mr-0" onClick={() => getImg(Img5)}>
-                            <div className="hidden cursor-pointer relative w-486px h-320px lg:block lg:w-330px lg:h-230px xl:w-420px xl:h-260px 2xl:w-460px 2xl:h-300px">
-                                <Image className="object-cover" src={Img5} alt="photo" fill/>
+                    <div className="hidden m-auto lg:flex lg:w-942px lg:justify-end lg:mt-4 xl:mt-6 xl:w-[1185px] 2xl:w-auto max-w-1440px">
+                        <div className="group relative cursor-pointer mr-4 xl:mr-6" onClick={() => getImg(Img7)}>
+                            <div className="relative w-235px h-235px lg:w-157px lg:h-157px xl:w-198px xl:h-198px 2xl:w-[330px] 2xl:h-240px">
+                                <Image className="object-cover object-center" src={Img7} alt="photo" fill/>
                             </div>
                             <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                         </div>
-                        <div className="flex mt-4 xl:mt-6">
-                            <div className="group relative cursor-pointer mr-4 xl:mr-6" onClick={() => getImg(Img3)}>
-                                <div className="relative w-235px h-235px lg:w-157px lg:h-157px xl:w-198px xl:h-198px 2xl:w-218px 2xl:h-218px">
-                                    <Image className="object-cover object-left" src={Img3} alt="photo" fill/>
-                                </div>
-                                <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                        <div className="group relative cursor-pointer mr-6" onClick={() => getImg(Img6)}>    
+                            <div className="relative w-235px h-235px lg:w-157px lg:h-157px xl:w-198px xl:h-198px 2xl:w-[240px] 2xl:h-240px">
+                                <Image className="object-cover object-left" src={Img6} alt="photo" fill/>
                             </div>
-                            <div className="group relative cursor-pointer" onClick={() => getImg(Img4)}>    
-                                <div className="relative w-235px h-235px lg:w-157px lg:h-157px xl:w-198px xl:h-198px 2xl:w-218px 2xl:h-218px">
-                                    <Image className="object-cover object-left" src={Img4} alt="photo" fill/>
-                                </div>
-                                <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
-                            </div>
+                            <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                         </div>
+                        <div className="group relative cursor-pointer mr-3 lg:mr-0" onClick={() => getImg(Img8)}>
+                                <div className=" cursor-pointer relative w-486px h-320px lg:block lg:w-330px lg:h-230px xl:w-420px xl:h-260px 2xl:w-460px 2xl:h-300px">
+                                    <Image className="object-cover" src={Img8} alt="photo" fill/>
+                                </div>
+                                <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
+                            </div>
                     </div>
                 </div>
             </div>

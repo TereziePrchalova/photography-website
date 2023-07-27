@@ -30,8 +30,8 @@ export default function Navbar(data) {
 
   return (
     <>
-      <div className="w-full bg-white xl:mb-4">
-          <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:px-12 lg:py-8 xl:pt-12 xl:pb-8 xl:px-12 max-w-1440px xl:m-auto">
+      <div className="w-full bg-white">
+          <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:px-12 lg:py-8 max-w-1440px xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
                 <div className="relative w-120px h-65px">
                   <Link href="/">
@@ -39,19 +39,11 @@ export default function Navbar(data) {
                   </Link>
                 </div>
               </div>
-              <div className='hidden lg:block lg:border-b-[1px] lg:border-black lg:-mb-12 lg:w-full lg:mx-12 '></div>
-              <div className="hidden lg:flex lg:space-x-9 lg:-mb-12">
+              <div className='hidden lg:block lg:w-full lg:mx-12 '></div>
+              <div className="hidden lg:flex lg:space-x-9 lg:-mb-8">
                 <Link className={`${router.pathname == "/" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/">Home</Link>
                 <Link className={`${router.pathname == "/portfolio" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/portfolio">Portfolio</Link>
                 <Link className={`${router.pathname == "/contact" ? " anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/contact">Contact</Link>
-              </div>
-
-              <div className='hidden lg:block lg:absolute lg:top-10 lg:right-12 xl:top-14 xl:right-12'>
-                <svg width="235" height="16" viewBox="0 0 235 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M231.233 9.58582L229.533 16L228 9.55039L224 7.90255L227.75 6.53821L229.417 0L231.167 6.39646L235 8.00886L231.233 9.58582Z" fill="black"/>
-                  <path d="M175.233 9.58582L173.533 16L172 9.55039L168 7.90255L171.75 6.53821L173.417 0L175.167 6.39646L179 8.00886L175.233 9.58582Z" fill="black"/>
-                  <path d="M119.233 9.58582L117.533 16L116 9.55039L112 7.90255L115.75 6.53821L117.417 0L119.167 6.39646L123 8.00886L119.233 9.58582Z" fill="black"/>
-                </svg>
               </div>
 
               <div>
@@ -149,20 +141,6 @@ export default function Navbar(data) {
                 <Link className={`${router.pathname == "/" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/">Home</Link>
                 <Link className={`${router.pathname == "/portfolio" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/portfolio">Portfolio</Link>
                 <Link className={`${router.pathname == "/contact" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/contact">Contact</Link>
-            </div>
-            
-            <div className='absolute bottom-[200px] right-9'>
-              <svg width="1" height="240" viewBox="0 0 1 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0.5" y1="439.018" x2="0.5" y2="-3.05176e-05" stroke="#565656"/>
-              </svg>
-            </div>
-
-            <div className='absolute bottom-10 right-8'>
-              <svg width="11" height="116" viewBox="0 0 11 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.23333 9.58582L5.53333 16L4 9.55039L0 7.90255L3.75 6.53821L5.41667 0L7.16667 6.39646L11 8.00886L7.23333 9.58582Z" fill="black"/>
-                <path d="M7.23333 59.5858L5.53333 66L4 59.5504L0 57.9025L3.75 56.5382L5.41667 50L7.16667 56.3965L11 58.0089L7.23333 59.5858Z" fill="black"/>
-                <path d="M7.23333 109.586L5.53333 116L4 109.55L0 107.903L3.75 106.538L5.41667 100L7.16667 106.396L11 108.009L7.23333 109.586Z" fill="black"/>
-              </svg>
             </div>
 
           </div>

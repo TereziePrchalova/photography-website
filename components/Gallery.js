@@ -124,6 +124,10 @@ export default function Gallery({section}) {
             image: "/images/weddings/15.jpg",
             category: "wedding",
         },
+        {
+            image: "/images/weddings/13.jpg",
+            category: "wedding",
+        },
     ]
 
     const [items, setItems] = useState(images);
