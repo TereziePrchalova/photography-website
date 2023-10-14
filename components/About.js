@@ -38,7 +38,7 @@ export default function About(data) {
                         </div>
                     </div>
                     <div className="m-auto w-320px md:w-470px md:mt-0 md:mx-0 xl:w-510px xl:ml-6">
-                        <p className='p text-justify mb-3 md:text-left xl:mb-4'>I’m a photographer with a true passion for visual storytelling. With an impressive four-year journey behind the lens, I have cultivated a deep appreciation for capturing authentic moments and emotions. Specializing in weddings and concerts, I find immense joy in freezing precious memories and immortalizing the energy of live performances. Based in the captivating city of Brno.</p>
+                        <p className='p text-justify mb-3 md:text-left xl:mb-4'>I’m a photographer with a true passion for visual storytelling. With an impressive four-year journey behind the lens, I have cultivated a deep appreciation for capturing authentic moments and emotions. Specializing in weddings and concerts, I find immense joy in freezing precious memories and immortalizing the energy of live performances. Based in the captivating city of Prague.</p>
                     </div>
                 </div>
             </div>
