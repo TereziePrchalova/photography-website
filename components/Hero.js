@@ -34,7 +34,7 @@ export default function Hero(data) {
                 </div>
                 <div className="flex justify-center mt-8 mb-16">
                     <div className="relative w-160px h-240px mr-4">
-                        <Image className="object-cover" src="/images/hero/1.jpg" alt="photo" fill/>
+                        <Image className="object-cover" src={Img2} alt="photo" fill/>
                     </div>
                     <div>
                         <div className="relative w-154px h-154px mb-4">
@@ -66,7 +66,7 @@ export default function Hero(data) {
                         <div className="flex">
                             <div className="group relative cursor-pointer" onClick={() => getImg(Img2)}>
                                 <div className="relative w-320px h-470px lg:w-250px lg:h-403px xl:w-330px xl:h-482px 2xl:w-390px 2xl:h-542px">
-                                    <Image className="object-cover" src="/images/hero/1.jpg" alt="photo" fill/>
+                                    <Image className="object-cover" src={Img2} alt="photo" fill/>
                                 </div>
                                 <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                             </div>
