@@ -20,6 +20,10 @@ export default function Gallery({section}) {
             category: "wedding",
         },
         {
+            image: "/images/portraits/9.jpg",
+            category: "portrait",
+        },
+        {
             image: "/images/portraits/1.jpg",
             category: "portrait",
         },
@@ -80,6 +84,10 @@ export default function Gallery({section}) {
             category: "portrait",
         },
         {
+            image: "/images/portraits/11.jpg",
+            category: "portrait",
+        },
+        {
             image: "/images/concerts/8.jpg",
             category: "concert",
         },
@@ -98,6 +106,10 @@ export default function Gallery({section}) {
         {
             image: "/images/weddings/10.jpg",
             category: "wedding",
+        },
+        {
+            image: "/images/portraits/12.jpg",
+            category: "portrait",
         },
         {
             image: "/images/weddings/3.jpg",
@@ -123,6 +135,10 @@ export default function Gallery({section}) {
         {
             image: "/images/weddings/5.jpg",
             category: "wedding",
+        },
+        {
+            image: "/images/portraits/10.jpg",
+            category: "portrait",
         },
         {
             image: "/images/weddings/11.jpg",
