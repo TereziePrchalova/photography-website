@@ -215,6 +215,34 @@ export default function Gallery({section}) {
         : setSlideNumber(slideNumber + 1)
     }
 
+    
+    useEffect(() => {
+        const keyDownHandler = event => {
+          console.log('User pressed: ', event.key);
+    
+          if (event.key === 'ArrowLeft') {
+            event.preventDefault();
+    
+            prevSlide();
+          } if (event.key === 'ArrowRight') {
+            event.preventDefault();
+    
+            nextSlide();
+          }
+          if (event.key === 'Escape') {
+            event.preventDefault();
+    
+            setModal(false)
+          }
+        };
+    
+        document.addEventListener('keydown', keyDownHandler);
+    
+        return () => {
+          document.removeEventListener('keydown', keyDownHandler);
+        };
+    }, [slideNumber]);
+
     return (
         <>
             <div>
