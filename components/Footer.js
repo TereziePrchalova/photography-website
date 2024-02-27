@@ -13,7 +13,7 @@ export default function Footer(data) {
                             </Link>
                         </div>
                         <div>
-                            <p className="font-PoppinsMedium tracking-wide text-14px">© 2023 Terezie Prchalova, All rights reserved</p>
+                            <p className="font-PoppinsMedium tracking-wide text-14px">© 2024 Terezie Prchalova, All rights reserved</p>
                         </div>
                     </div>
                 </div>

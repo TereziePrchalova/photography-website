@@ -79,7 +79,7 @@ export default function Hero(data) {
                                 </div>
                                 <h2 className="heroSubheadline md:-mb-2 lg:mt-2">Moments that matter</h2>
                                 <p className="heroText w-358px mt-1 mb-6 lg:w-330px xl:w-390px 2xl:w-450px">If you're looking for an artist to capture your milestones and moments in-between, we just might be a match made in heaven!</p>
-                                <a href="/portfolio">
+                                <a href="/photography">
                                     <button className="button w-150px h-40px bg-black text-white rounded-[6px] transition-all duration-500 hover:bg-grey">More</button>
                                 </a>
                             </div>

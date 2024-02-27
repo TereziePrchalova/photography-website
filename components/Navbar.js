@@ -33,16 +33,17 @@ export default function Navbar(data) {
       <div className="w-full bg-white">
           <nav className="bg-transparent relative flex justify-between items-center py-6 pl-6 pr-8 md:py-5 md:px-8 lg:px-12 lg:py-8 max-w-1440px xl:m-auto">
               <div className="nav-logo flex items-center justify-start md:justify-center ">
-                <div className="relative w-120px h-65px">
+                <div className="relative w-[200px] h-65px">
                   <Link href="/">
-                      <Image className="cursor-pointer object-contain" alt="Logo" src="/images/logoTerezie.png" fill />
+                      <Image className="cursor-pointer object-contain lg:mt-4" alt="Logo" src="/images/logo.svg" fill />
                   </Link>
                 </div>
               </div>
               <div className='hidden lg:block lg:w-full lg:mx-12 '></div>
               <div className="hidden lg:flex lg:space-x-9 lg:-mb-8">
                 <Link className={`${router.pathname == "/" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/">Home</Link>
-                <Link className={`${router.pathname == "/portfolio" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/portfolio">Portfolio</Link>
+                <Link className={`${router.pathname == "/photography" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/photography">Photography</Link>
+                <Link className={`${router.pathname == "/design" ? "anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/design">Design</Link>
                 <Link className={`${router.pathname == "/contact" ? " anim_underline anim_underline_active" : "anim_underline"} pb-2 linkDesktop`} href="/contact">Contact</Link>
               </div>
 
@@ -139,7 +140,8 @@ export default function Navbar(data) {
 
             <div className='mt-[10rem] ml-6 flex flex-col md:ml-8'>
                 <Link className={`${router.pathname == "/" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/">Home</Link>
-                <Link className={`${router.pathname == "/portfolio" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/portfolio">Portfolio</Link>
+                <Link className={`${router.pathname == "/photography" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/photography">Photography</Link>
+                <Link className={`${router.pathname == "/design" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/design">Design</Link>
                 <Link className={`${router.pathname == "/contact" ? "text-purple" : "text-black"} mb-4 link`} onClick={menuToggle} href="/contact">Contact</Link>
             </div>
 

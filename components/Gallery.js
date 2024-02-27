@@ -248,7 +248,7 @@ export default function Gallery({section}) {
             <div>
                 <div className="sticky top-0 w-full z-40 left-0  bg-white">
                     <div className="relative max-w-[1440px] flex flex-col justify-start -mt-4 p-6 md:flex-row md:pt-8 md:pb-4 md:px-0 md:-mt-8 lg:-mt-9 lg:pt-9 lg:pb-5 xl:mx-auto xl:pt-6 xl:mb-2 xl:-mt-6">
-                        <h1 className='h1'>Portfolio</h1>
+                        <h1 className='h1'>Photography</h1>
                         <div className="mt-1 md:my-auto md:ml-8">
                             <div className={`${active == 'all' ? 'text-grey lg:text-black anim_underline anim_underline_active' : 'text-black anim_underline'} linkGallery pb-1 inline cursor-pointer`} onClick={() => {setActive('all'), setItems(images), top();}}>All</div>
                             <div className={`${active == 'wedding' ? 'text-grey lg:text-black anim_underline anim_underline_active' : 'text-black anim_underline'} linkGallery pb-1 inline cursor-pointer mx-4 md:mx-6`} onClick={() => {setActive('wedding'), filterItem('wedding');}} >Weddings</div>

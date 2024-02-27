@@ -26,7 +26,7 @@ export default function Work(data) {
                                 <div className="relative w-330px h-220px md:w-310px md:h-200px lg:w-420px lg:h-280px xl:w-510px xl:h-340px">
                                     <Image className="object-cover" src="/images/weddings/14.jpg" alt="photo" fill/>
                                 </div>
-                                <Link href="/portfolio?section=wedding">
+                                <Link href="/photography?section=wedding">
                                     <div class="absolute top-0 left-0 w-330px md:w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                         <p class="work text-white">Weddings</p>
                                     </div>
@@ -38,7 +38,7 @@ export default function Work(data) {
                                 <div className="relative w-157px h-157px md:w-147px md:h-147px lg:w-202px lg:h-202px xl:w-243px xl:h-243px">
                                     <Image className="object-cover" src="/images/weddings/3.jpg" alt="photo" fill/>
                                 </div>
-                                <Link href="/portfolio?section=wedding">
+                                <Link href="/photography?section=wedding">
                                     <div class="absolute top-0 left-0 w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                         <p class="work text-white">Weddings</p>
                                     </div>
@@ -48,7 +48,7 @@ export default function Work(data) {
                                 <div className="relative w-157px h-157px md:w-147px md:h-147px lg:w-202px lg:h-202px xl:w-243px xl:h-243px">
                                     <Image className="object-cover object-left" src="/images/portraits/3.jpg" alt="photo" fill/>
                                 </div>
-                                <Link href="/portfolio?section=portrait">
+                                <Link href="/photography?section=portrait">
                                     <div class="absolute top-0 left-0 w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                         <p class="work text-white">Portraits</p>
                                     </div>
@@ -61,13 +61,13 @@ export default function Work(data) {
                             <div className="relative object-cover w-194px h-291px md:w-235px md:h-363px lg:w-332px lg:h-498px xl:w-404px xl:h-607px">
                                 <Image className="object-cover" src="/images/concerts/7.jpg" alt="photo" fill/>
                             </div>
-                            <Link href="/portfolio?section=concert">
+                            <Link href="/photography?section=concert">
                                 <div class="absolute top-0 left-0 w-full h-full flex bg-opacity-60 opacity-0 flex-col justify-center items-center bg-grey group-hover:opacity-100 duration-500"> 
                                     <p class="work text-white">Concerts</p>
                                 </div>
                             </Link>
                         </div>
-                        <a href="/portfolio">
+                        <a href="/photography">
                             <button className="button md:hidden w-120px h-35px bg-black text-white ml-4 rounded-[6px] transition-all duration-500 hover:bg-grey">Portfolio</button>
                         </a>
                     </div>
