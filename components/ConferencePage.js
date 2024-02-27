@@ -2,7 +2,7 @@ import Image from "next/image"
 import ConferencePosterMockup from "../public/images/design/flyerMockup.jpg"
 import ConferencePoster from "../public/images/design/conferencePoster.jpg"
 import ProteinStructure from "../public/images/design/proteinStructure.jpg"
-import ProteinSequence from "../public/images/design/ProteinSequence.jpg"
+import ProteinSequence from "../public/images/design/proteinSequence.jpg"
 
 export default function ConferencePage() {
   return (
