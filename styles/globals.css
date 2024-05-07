@@ -79,6 +79,11 @@ a {
   position: relative;
 }
 
+.test {
+  color: #E89E33;
+  -webkit-text-stroke: 1.5px #30595C;
+}
+
 @media (hover: hover) {
   .anim_underline:after {
     content: '';
