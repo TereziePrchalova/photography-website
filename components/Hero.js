@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { use, useState } from "react";
-import Img1 from "../public/images/portraits/3.jpg"
-import Img2 from "../public/images/heroHighQuality/1.jpg"
+import Img1 from "../public/images/weddings/6.jpg"
+import Img2 from "../public/images/portraits/2.jpg"
 import Img3 from "../public/images/concerts/5.jpg"
-import Img4 from "../public/images/concerts/2.jpg"
-import Img5 from "../public/images/weddings/5.jpg"
-import Img6 from "../public/images/weddings/6.jpg"
-import Img7 from "../public/images/weddings/9.jpg"
-import Img8 from "../public/images/concerts/4.jpg"
+import Img4 from "../public/images/concerts/1.jpg"
+import Img5 from "../public/images/events/11.jpg"
+import Img6 from "../public/images/events/1.jpg"
+import Img7 from "../public/images/events/2.jpg"
+import Img8 from "../public/images/weddings/3.jpg"
 
 export default function Hero(data) {
 
@@ -23,7 +23,7 @@ export default function Hero(data) {
         <>
             <div className='mobile my-4 md:hidden'>
                 <div className="relative w-330px h-220px m-auto">
-                    <Image className="object-cover" src="/images/hero/3.jpg" alt="photo" fill/>
+                    <Image className="object-cover" src={Img1} alt="photo" fill/>
                 </div>
                 <div className="my-4 mx-auto w-330px">
                     <h2 className="font-PoppinsBold tracking-wide text-22px">Moments that matter</h2>
@@ -73,7 +73,7 @@ export default function Hero(data) {
                             <div className="ml-4 flex flex-col justify-between xl:ml-6">
                                 <div className="group relative cursor-pointer" onClick={() => getImg(Img1)}>
                                     <div className="relative w-360px h-240px lg:w-330px lg:h-230px xl:w-390px xl:h-260px 2xl:w-450px 2xl:h-300px">
-                                        <Image className="object-cover" src="/images/hero/3.jpg" alt="photo" fill/>
+                                        <Image className="object-cover" src={Img1} alt="photo" fill/>
                                     </div>
                                     <div className="absolute top-0 left-0 h-full w-full bg-white bg-opacity-25 opacity-0 group-hover:opacity-100 duration-500"></div>
                                 </div>

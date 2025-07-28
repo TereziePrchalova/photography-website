@@ -61,13 +61,13 @@ a {
 }
 
 @layer components {
-  .h1 { @apply font-PoppinsBold tracking-wide leading-[3rem] text-44px md:leading-normal md:text-48px xl:text-56px }
+  .h1 { @apply font-PoppinsBold tracking-wide leading-[3rem] text-44px md:leading-normal md:text-48px xl:text-52px }
   .h2 { @apply font-PoppinsBold tracking-wide text-30px md:text-40px xl:text-52px }
   .copy { @apply font-PoppinsLight tracking-wide text-14px md:text-20px xl:text-18px }
   .heroSubheadline { @apply font-PoppinsBold tracking-wide text-24px md:text-30px lg:text-24px xl:text-30px }
   .heroText { @apply font-PoppinsLight tracking-wide text-14px md:text-16px lg:text-14px xl:text-18px }
   .button { @apply font-PoppinsMedium tracking-wide text-14px md:text-16px lg:text-14px xl:text-18px }
-  .work { @apply font-PoppinsRegular tracking-wider text-24px lg:text-32px xl:text-38px }
+  .work { @apply font-PoppinsRegular tracking-wider text-24px lg:text-32px xl:text-34px }
   .p { @apply font-PoppinsLight text-16px md:text-20px }
   .link { @apply font-PoppinsBold tracking-wide text-28px }
   .linkDesktop { @apply font-PoppinsBold tracking-wider text-18px }

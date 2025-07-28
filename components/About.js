@@ -27,7 +27,7 @@ export default function About(data) {
     return (
         <>
             <div className='container reveal fade-bottom max-w-1440px m-auto'>
-                <h2 className='h2 text-center m-auto md:text-left md:w-696px lg:w-942px xl:w-1188px 2xl:w-1344px'>A <span className="h2 text-20px md:text-30px xl:text-24px">little</span> bit about me ...</h2>
+                <h2 className='h2 text-center m-auto md:text-left md:w-696px lg:w-942px xl:w-1188px 2xl:w-1344px'>About me</h2>
                 <div className="mt-4 mb-12 md:flex md:mx-auto md:w-696px lg:w-942px lg:flex lg:my-10 xl:w-1188px xl:my-14 xl:mb-[8rem] 2xl:w-1344px">
                     <div className="flex justify-center mt-1 mb-6 md:my-0 md:flex md:flex-col xl:flex-row">
                         <div className="relative w-157px h-157px mr-4 md:mb-4 md:w-147px md:h-147px lg:mr-4 xl:w-255px xl:h-255px xl:mb-0 xl:mr-6">
@@ -38,7 +38,7 @@ export default function About(data) {
                         </div>
                     </div>
                     <div className="m-auto w-320px md:w-470px md:mt-0 md:mx-0 xl:w-510px xl:ml-6">
-                        <p className='p text-justify mb-3 md:text-left xl:mb-4'>I’m a photographer with a true passion for visual storytelling. With an impressive five-year journey behind the lens, I have cultivated a deep appreciation for capturing authentic moments and emotions. Specializing in weddings and concerts, I find immense joy in freezing precious memories and immortalizing the energy of live performances. Based in the captivating city of Prague.</p>
+                        <p className='p text-justify mb-3 md:text-left xl:mb-4'>I’m a photographer with a true passion for visual storytelling. With an five-year journey behind the lens, I have cultivated a deep appreciation for capturing authentic moments and emotions. Specializing in weddings and events. Based in Prague.</p>
                     </div>
                 </div>
             </div>

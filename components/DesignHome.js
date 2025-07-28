@@ -18,11 +18,6 @@ export default function DesignHome() {
             name: "Database website",
             to:"/database",
         },
-        {
-            image: "/images/design/photographyMockup.png",
-            name: "Photography website",
-            to:"/photography-website",
-        },
     ]
 
 

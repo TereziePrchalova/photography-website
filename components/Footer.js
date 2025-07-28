@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer(data) {
     return (
         <>
-            <div className='relative bottom-0 w-full bg-black text-white py-10'>
+            <div className='relative bottom-0 w-full py-10'>
                 <div className="max-w-1440px m-auto">
                     <div className="flex flex-col items-center ">
                         <div className="relative w-8 h-8 mb-2">
@@ -13,7 +13,7 @@ export default function Footer(data) {
                             </Link>
                         </div>
                         <div>
-                            <p className="font-PoppinsMedium tracking-wide text-14px">© 2024 Terezie Prchalova, All rights reserved</p>
+                            <p className="font-PoppinsMedium tracking-wide text-14px">© 2025 Terezie Prchalova, All rights reserved</p>
                         </div>
                     </div>
                 </div>
