@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 import Footer from '../components/Footer'
+import { Analytics } from '@vercel/analytics/react';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
       <Footer/>
+      <Analytics />
     </div>
   )
 }
